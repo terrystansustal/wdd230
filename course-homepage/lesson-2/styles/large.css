@@ -64,8 +64,8 @@
     }
 
     #img-content-2 {
-        width: 75%;
-        height: 575px;
+        width: 70%;
+        height: auto;
     }
 
     #content-3-heading-grid {
@@ -79,15 +79,17 @@
         margin-top: -54px;
     }
     #img-content-3 {
-        width: 75%;
-        height: 575px;
+        width: 70%;
+        height: auto;
     }
 
     #border-content-2 {
-        height: 1048px;
+        /* height: 1048px; */
+        width: 99%;
+        height: auto;
     }
 
     #border-content-3 {
-        height: 1048px;
+        height: auto;
     }
 }

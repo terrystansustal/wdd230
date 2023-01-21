@@ -11,7 +11,6 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: white;
     font-family: 'Roboto', sans-serif;
     z-index: 1;
 }
@@ -19,32 +18,37 @@ h1, h2, h3, h4 {
 h1 {
     margin-top: 50px;
     font-size: 2em;
+    color: white;
 }
 
 h2 {
     margin-top: 120px;
     font-size: 1.5em;
+    color: white;
 }
 
 h3 {
     text-align: center;
     font-size: 17px;
+    color: white
 }
 
 h4 {
     text-align: left;
     margin-left: 20px;
     font-size: 20px;
+    color: black;
 }
 
 p {
     font-family: 'Merriweather', serif;
     font-size: 16px;
-    color: white;
+    color: black;
 }
 
 footer p {
-    font-size: 20px;
+    font-size: 15px;
+    color: white;
 }
 
 
@@ -61,7 +65,7 @@ footer p {
 }
 
 #main-background {
-    background-color: #8D99AE;
+    background-color: #edf2f4;
     width: auto;
     height: 138em;
     grid-column: 1/6;
@@ -69,7 +73,7 @@ footer p {
 }
 
 #header-background {
-    background-color: #2B2D42;
+    background-color: black;
     width: auto;
     height: 200px;
     grid-column: 1/2;
@@ -164,7 +168,7 @@ footer p {
 }
 
 #footer-background {
-    background-color: #8D99AE;
+    background-color: black;
     grid-column: 1/5;
     grid-row: 1;
     width: auto;

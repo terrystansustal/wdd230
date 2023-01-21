@@ -1,11 +1,61 @@
+@media only screen and (min-width: 652px) {
+    h3 {
+        font-size: 13px;
+    }
+
+    #content-1-background {
+        margin-top: -41px;
+    }
+
+    #content-2-background {
+        margin-top: -41px;
+    }
+
+    #content-3-background {
+        margin-top: -41px;
+    }
+
+    #border-content-2 {
+        /* height: 948px; */
+        height: auto;
+        width: 101%;
+    }
+
+    #content-1-background {
+        margin-top: -42px;
+        height: 40px;
+    }
+
+    #content-2-background {
+        margin-top: -42px;
+        height: 40px;
+    }
+
+    #content-3-background {
+        margin-top: -42px;
+        height: 40px;
+    }
+
+    #main-background {
+        height: 130em;
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+}
+
 @media only screen and (min-width: 600px) {
 
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     
     h2 {
         font-size: 2em;
+    }
+
+    h3 {
+        font-size: 13px;
+        /* display: inline; */
     }
 
     p {
@@ -21,9 +71,9 @@
     }
 
     #main-background {
-        height: 125em;
+        height: 150em;
         grid-column: 1/4;
-        grid-row: 1/3;
+        grid-row: 1/4;
     }
 
     #content-1-heading-grid {
@@ -33,7 +83,7 @@
     }
 
     #content-1-background {
-        margin-top: -57px;
+        margin-top: -41px;
     }
 
     .border-content {
@@ -57,35 +107,38 @@
     }
 
     #content-2-background {
-        margin-top: -57px;
+        margin-top: -41px;
+        /* margin-top: -78px; */
     }
 
     #img-content-2 {
-        width: 75%;
-        height: 493px;
+        width: 72%;
+        height: auto;
     }
 
     #content-3-heading-grid {
         grid-column: 1/3;
         grid-row: 2;
         margin-left: 80px;
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     #content-3-background {
-        margin-top: -57px;
+        margin-top: -41px;
     }
 
     #img-content-3 {
-        width: 50%;
-        height: 493px;
+        width: 60%;
+        height: auto;
     }
 
     #border-content-2 {
-        height: 948px;
+        /* height: 948px; */
+        height: auto;
     }
 
     #border-content-3 {
-        height: 810px;
+        /* height: 810px; */
+        height: auto;
     }
 }

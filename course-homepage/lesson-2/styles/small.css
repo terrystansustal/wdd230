@@ -5,10 +5,11 @@
     
     h2 {
         font-size: 1.5em;
+        margin-top: 133px;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     h4 {
@@ -25,7 +26,7 @@
 
     #main-grid {
         grid-template-columns: 1fr 0.1fr;
-        grid-row: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 1fr 1fr 1fr 1fr 1fr;
     }
 
     #main-background {
@@ -46,7 +47,7 @@
     }
 
     #content-1-background {
-        margin-top: -57px;
+        margin-top: -48px;
     }
 
     #content-2-heading-grid {
@@ -56,12 +57,13 @@
     }
 
     #content-2-background {
-        margin-top: -57px;
+        margin-top: -48px;
     }
 
     #img-content-2 {
         width: 50%;
-        height: 50%;
+        /* height: 50%; */
+        height: auto;
     }
 
     #content-3-heading-grid {
@@ -72,19 +74,20 @@
     }
 
     #content-3-background {
-        margin-top: -57px;
+        margin-top: -48px;
     }
 
     #img-content-3 {
         width: 50%;
-        height: 50%;
+        /* height: 50%; */
+        height: auto;
     }
 
     #border-content-2 {
-        height: 850px;
+        height: auto;
     }
 
     #border-content-3 {
-        height: 835px;
+        height: auto;
     }
 }
