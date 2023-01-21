@@ -260,18 +260,26 @@ table {
 
 #sample-40 {
     font-size: 40px;
+    background-color: #6D3B47;
+    color: white;
 }
 
 #sample-30-1 {
     font-size: 30px;
+    background-color: #6D3B47;
+    color: white;
 }
 
 #sample-30-2 {
     font-size: 30px;
+    background-color: #191D32;
+    color: white;
 }
 
 #sample-25 {
     font-size: 25px;
+    background-color: #191D32;
+    color: white;
 }
 
 #sample-20-1 {
@@ -280,10 +288,14 @@ table {
 
 #sample-20-2 {
     font-size: 20px;
+    background-color: #191D32;
+    color: white;
 }
 
 #sample-16 {
     font-size: 16px;
+    background-color: #191D32;
+    color: white;
 }
 
 .roboto {
