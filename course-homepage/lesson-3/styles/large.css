@@ -72,6 +72,11 @@
         grid-row: 4;
         margin-top: 30px;
     }
+
+    /* design.html */
+    #h3-color-pall {
+        margin-top: 30px;
+    }
 }
 
 @media (min-width: 48em) {
@@ -189,6 +194,10 @@
         grid-column: 3;
         margin-top: 40px;
         text-align: center;
+    }
+
+    #h3-color-pall {
+        margin-top: 30px;
     }
     
     #color-table {

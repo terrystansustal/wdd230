@@ -219,6 +219,10 @@ table, th, td {
     text-align: center;
 }
 
+#h3-color-pall {
+    margin-top: 30px;
+}
+
 #color-table {
     grid-column: 3;
     grid-row: 2;
