@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Merriweather', serif;
     color: black;
 }
@@ -95,11 +95,12 @@ nav a {
 }
 
 #para-purpose {
+    grid-column: 1/4;
     text-align: center;
-    /* margin-left: 18rem; */
+    margin-left: 5rem;
     font-size: 16px;
     margin-top: 10px;
-    /* width: 60%; */
+    width: 70%;
     line-height: 15px;
     border: 3px solid black;
     padding: 10px;
@@ -131,11 +132,15 @@ nav a {
 /* **** target-audience.html **** */
 
 table, th, td {
-    width: 50em;
+    width: 5px;
     padding: 5px;
     border: 1px solid;
     text-align: center;
 }
+
+/* table {
+    width: 100px;
+} */
 
 /* **** ALL ID'S WILL GO HERE **** */
 #main-grid2 {
@@ -151,7 +156,7 @@ table, th, td {
 }
 
 #target-aud-p {
-    font-size: 20px;
+    font-size: 18px;
     width: 70%;
     text-align: left;
     padding-top: 5px;
@@ -166,10 +171,6 @@ table, th, td {
 #michelle-img {
     width: 80%;
     height: 80%;
-}
-
-table {
-    width: 10px;
 }
 
 #persona-1 {
