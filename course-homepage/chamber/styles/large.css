@@ -1,0 +1,121 @@
+@media only screen and (min-width: 60em) {
+   
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul#primaryNav {
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav a {
+        color: white;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        border: none !important;
+    }
+
+    .logo {
+        grid-area: logo;
+        /* display: flex; */
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        z-index: 1;
+        grid-area: title;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        display: flex;
+        justify-self: flex-start;
+        align-self: flex-end;
+        margin-top: 50px;
+    }
+
+    .social-img {
+        width: 50px;
+        height: auto;
+    }
+    
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
+        grid-template-rows: 20% 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "header header header header header"
+        ". event hero spotlight ."
+        ". weather hero spotlight ."
+        ". join main spotlight ."
+        "footer footer footer footer footer";
+        gap: 10px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #6D3B47;
+        color: white;
+        display: grid;
+        grid-template-columns: 0.3fr 0.6fr 1fr 0.3fr;
+        grid-template-rows: 50% 1fr;
+        grid-template-areas:
+        "logo title nav social"
+        "date date date date";
+        padding: 20px;
+    }
+
+    #hero-img {
+        grid-area: hero;
+        padding: 20px;
+    }
+
+    main {
+        grid-area: main;
+        padding: 20px;
+    }
+
+    #spotlight {
+        grid-area: spotlight;
+    }
+
+    #join {
+        grid-area: join;
+        padding: 20px;
+    }
+
+    #event {
+        grid-area: event;
+        padding: 20px;
+    }
+
+    #weather {
+        grid-area: weather;
+        padding: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+        padding: 20px;
+    }
+}
