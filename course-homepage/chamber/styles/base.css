@@ -10,10 +10,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif; */
 
-/* #container {
-    max-width: 1600px;
-    margin: 0 auto;
-} */
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
 
 /* HEADER FOR HOMEPAGE */
 
@@ -144,11 +145,6 @@ nav ul.open {
     margin-top: 40px;
 }
 
-p {
-    font-family: 'Merriweather', serif;
-    font-size: 1rem;
-}
-
 /* END OF HEADER FOR HOME PAGE */
 
 /* GRID AREA FOR HOME-PAGE */
@@ -233,7 +229,7 @@ main {
     padding: 20px;
 }
 
-/* FOOTER FOR HOME PAGE */
+/* FOOTER FOR ALL PAGE */
 
 footer {
     grid-area: footer;
@@ -298,6 +294,8 @@ footer {
     justify-self: center;
     align-self: center;
 } */
+
+/* END OF FOOTER FOR ALL PAGE */
 
 
 

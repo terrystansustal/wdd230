@@ -1,5 +1,6 @@
 @media only screen and (min-width: 60em) {
    
+    /* HEADER FOR ALL PAGE */
     nav ul li a {
         padding: .5rem 1rem;
     }
@@ -56,6 +57,10 @@
         width: 50px;
         height: auto;
     }
+
+    /* END OF HEADER FOR ALL PAGE */
+
+    /* GRID FOR HOME PAGE */
     
     .container {
         max-width: 1600px;
@@ -114,13 +119,21 @@
         padding: 20px;
     }
 
+    /* END OF GRID FOR HOME PAGE */
+
+    /* FOOTER FOR ALL PAGE */
+
     footer {
         grid-area: footer;
         padding: 20px;
     }
+
+    /* END OF FOOTER FOR ALL PAGE */
 }
 
 @media only screen and (max-width: 1285px) {
+
+    /* HEADER FOR ALL PAGE */
     .title {
         font-size: 1.5em;
     }
@@ -128,9 +141,14 @@
     /* nav a {
         font-size: 1em;
     } */
+
+    /* END OF HEADER FOR ALL PAGE */
 }
 
 @media only screen and (max-width: 1112px) {
+    
+    /* HEADER FOR ALL PAGE */
+
     .title {
         font-size: 1.3em;
     }
@@ -138,9 +156,14 @@
     nav a {
         font-size: 1.2em;
     }
+
+    /* END OF HEADER FOR ALL PAGE */
 }
 
 @media only screen and (max-width: 1043px) {
+
+     /* HEADER FOR ALL PAGE */
+
     .title {
         font-size: 1.3em;
     }
@@ -148,4 +171,6 @@
     nav a {
         font-size: 1.1em;
     }
+
+    /* END OF HEADER FOR ALL PAGE */
 }

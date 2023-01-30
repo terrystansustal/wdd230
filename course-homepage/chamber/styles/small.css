@@ -1,17 +1,6 @@
 @media only screen and (max-width: 767px) {
 
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 12% 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "header"
-        "hero"
-        "event"
-        "weather"
-        "main"
-        "spotlight"
-        "footer";
-    }
+    /* HEADER FOR HOME PAGE */
 
     header {
         grid-area: header;
@@ -43,6 +32,23 @@
         /* margin-top: 500px; */
     }
 
+    /* END OF HEADER FOR HOME PAGE */
+
+    /* GRID FOR HOME PAGE */
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 12% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "hero"
+        "event"
+        "weather"
+        "main"
+        "spotlight"
+        "footer";
+    }
+
     #hero-img {
         grid-area: hero;
         padding: 20px;
@@ -71,6 +77,10 @@
     #spotlight {
         grid-area: spotlight;
     }
+
+    /* END OF GRID FOR HOME PAGE */
+
+    /* FOOTER FOR HOME PAGE */
 
     footer {
         grid-area: footer;
@@ -119,22 +129,14 @@
         font-size: 16px;
         border: 1px solid white;
     }
+
+    /* END OF FOOTER FOR HOME PAGE */
 }
 
 @media only screen and (max-width: 600px) {
 
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 12% 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "header"
-        "hero"
-        "event"
-        "weather"
-        "main"
-        "spotlight"
-        "footer";
-    }
+
+    /* HEADER FOR HOME PAGE */
 
     header {
         grid-area: header;
@@ -172,6 +174,23 @@
         /* margin-top: 500px; */
     }
 
+    /* END OF HEADER FOR HOME PAGE */
+
+    /* GRID FOR HOME PAGE */
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 12% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "hero"
+        "event"
+        "weather"
+        "main"
+        "spotlight"
+        "footer";
+    }
+
     #hero-img {
         grid-area: hero;
     }
@@ -195,6 +214,10 @@
     #spotlight {
         grid-area: spotlight;
     }
+
+    /* END OF GRID FOR HOME PAGE */
+
+    /* FOOTER OF ALL PAGE */
 
     footer {
         grid-area: footer;
@@ -245,4 +268,6 @@
         font-size: 0.8em;
         border: 1px solid white;
     }
+
+    /* END OF FOOTER FOR ALL PAGE */
 }

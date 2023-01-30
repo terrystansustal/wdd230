@@ -1,5 +1,7 @@
 @media only screen and (min-width: 768px) {
 
+    /* HEADER FOR HOME PAGE */
+
     header {
         grid-area: header;
         grid-template-columns: 1fr 3fr 0.8fr 1fr;
@@ -46,7 +48,9 @@
     }
 
 
-    /* HEADER */
+    /* END OF HEADER FOR HOME PAGE */
+
+    /* GRID OF HOME PAGE */
 
     .container {
         grid-template-columns: 1fr 1fr;
@@ -89,6 +93,10 @@
         grid-area: weather;
         padding: 20px;
     }
+
+    /* END OF GRID FOR HOME PAGE */
+
+    /* FOOTER FOR ALL PAGE */
 
     footer {
         grid-area: footer;
@@ -135,4 +143,6 @@
         font-size: 16px;
         border: 1px solid white;
     }
+
+    /* END OF FOOTER FOR ALL PAGE */
 }
