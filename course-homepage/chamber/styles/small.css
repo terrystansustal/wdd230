@@ -233,8 +233,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: white;
-        font-family: 'Merriweather', serif;
         font-size: 1em;
         margin-left: -50px;
     }
@@ -244,8 +242,6 @@
         padding: 10px;
         display: inline;
         text-align: center;
-        color: white;
-        font-family: 'Merriweather', serif;
         font-size: 0.8em;
         border: 1px solid white;
     }
