@@ -28,7 +28,7 @@
     
     nav a {
         color: white;
-        font-size: 24px;
+        font-size: 1.5em;
         font-family: 'Roboto', sans-serif;
         text-decoration: none;
         border: none !important;
@@ -117,5 +117,35 @@
     footer {
         grid-area: footer;
         padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    /* nav a {
+        font-size: 1em;
+    } */
+}
+
+@media only screen and (max-width: 1112px) {
+    .title {
+        font-size: 1.3em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 1043px) {
+    .title {
+        font-size: 1.3em;
+    }
+
+    nav a {
+        font-size: 1em;
     }
 }

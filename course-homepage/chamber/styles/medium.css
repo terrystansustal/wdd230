@@ -45,11 +45,12 @@
         /* margin-top: 500px; */
     }
 
+
     /* HEADER */
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 15% 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 13% 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "header header"
         "hero hero"
