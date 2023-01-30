@@ -33,7 +33,6 @@ header {
 
 .logo {
     grid-area: logo;
-    /* display: flex; */
     width: 70%;
     height: auto;
 }
