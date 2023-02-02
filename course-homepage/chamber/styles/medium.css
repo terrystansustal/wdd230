@@ -92,7 +92,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 13% 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 13% 1fr 1fr 23% 1fr 1fr 1fr;
         grid-template-areas:
         "header header"
         "hero hero"
@@ -115,6 +115,19 @@
 
     #spotlight {
         grid-area: spotlight;
+    }
+
+    .spotlight-1 {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .spotlight-2 {
+        height: 200px;
+    }
+
+    .spotlight-3 {
+        display: none;
     }
 
     #join {

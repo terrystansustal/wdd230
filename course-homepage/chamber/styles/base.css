@@ -16,6 +16,10 @@ p {
     font-size: 1rem;
 }
 
+div p {
+    background-color: black;
+}
+
 /* HEADER FOR HOMEPAGE */
 
 header {
@@ -285,6 +289,10 @@ footer {
     display: flex;
     justify-self: center;
     align-self: center;    
+}
+
+.location-map {
+    color: white;
 }
 
 .info {

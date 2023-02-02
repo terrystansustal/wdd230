@@ -58,7 +58,7 @@
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 12% 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 12% 1fr 1fr 1fr 1fr 23% 0.2fr;
         grid-template-areas:
         "header"
         "hero"
@@ -96,6 +96,19 @@
 
     #spotlight {
         grid-area: spotlight;
+    }
+
+    .spotlight-1 {
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .spotlight-2 {
+        height: 200px;
+    }
+
+    .spotlight-3 {
+        display: none;
     }
 
     /* END OF GRID FOR HOME PAGE */
@@ -224,6 +237,32 @@
 
     /* GRID FOR HOME PAGE */
 
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 8% 1fr 1fr 1fr 1fr 13% 0.2fr;
+        grid-template-areas:
+        "header"
+        "hero"
+        "event"
+        "weather"
+        "main"
+        "spotlight"
+        "footer";
+    }
+
+    .spotlight-1 {
+        height: 200px;
+        margin-top: 30px;
+    }
+
+    .spotlight-2 {
+        height: 200px;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-3 {
+        display: none;
+    }
 
     /* END OF GRID FOR HOME PAGE */
 
