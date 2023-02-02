@@ -11,15 +11,22 @@
         "date date date date";
     }
 
-    .title {
+    /* .title {
         z-index: 1;
         grid-area: title;
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
-        /* display: flex;
-        justify-self: flex-start;
-        align-self: flex-end; */
-        /* margin-left: -100px; */
+    } */
+
+    #title {
+        z-index: 1;
+        grid-area: title;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+    }
+
+    #social.close {
+        display: none;
     }
 
     .social-img {
@@ -30,6 +37,19 @@
     nav {
         grid-area: button;
         /* margin-top: 500px; */
+    }
+
+    #date.close {
+        display: none;
+    }
+
+    .open {
+        width: 610px;
+        text-align: left;
+    }
+
+    .close {
+        display: none;
     }
 
     /* END OF HEADER FOR HOME PAGE */
@@ -140,28 +160,41 @@
 
     header {
         grid-area: header;
-        grid-template-columns: 1fr 3fr 0.8fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr;
         grid-template-rows: 1fr 90%;
         grid-template-areas:
-        "logo title social button"
+        " logo title social button"
         "date date date date";
     }
 
-    .logo {
+    /* .logo {
+        grid-area: logo;
+        width: 50%;
+        height: auto;
+    } */
+
+    #logo {
         grid-area: logo;
         width: 100%;
         height: auto;
     }
 
-    .title {
+    /* .title {
         z-index: 1;
         grid-area: title;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
-        /* display: flex;
-        justify-self: flex-start;
-        align-self: flex-end; */
-        /* margin-left: -100px; */
+    } */
+
+    #title {
+        z-index: 1;
+        grid-area: title;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+
+    #social.close {
+        display: none;
     }
 
     .social-img {
@@ -171,49 +204,26 @@
 
     nav {
         grid-area: button;
-        /* margin-top: 500px; */
+    }
+
+    #date.close {
+        display: none;
+    }
+
+    .open {
+        width: 500px;
+        text-align: left;
+        display: block;
+    }
+
+    .close {
+        display: none;
     }
 
     /* END OF HEADER FOR HOME PAGE */
 
     /* GRID FOR HOME PAGE */
 
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 12% 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "header"
-        "hero"
-        "event"
-        "weather"
-        "main"
-        "spotlight"
-        "footer";
-    }
-
-    #hero-img {
-        grid-area: hero;
-    }
-
-    #event {
-        grid-area: event;
-    }
-
-    #weather {
-        grid-area: weather;
-    }
-
-    #join {
-        display: none;
-    }
-
-    main {
-        grid-area: main;
-    }
-
-    #spotlight {
-        grid-area: spotlight;
-    }
 
     /* END OF GRID FOR HOME PAGE */
 
