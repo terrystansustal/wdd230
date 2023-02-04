@@ -13,11 +13,6 @@ font-family: 'Roboto', sans-serif; */
 
 p {
     font-family: 'Merriweather', serif;
-    font-size: 1rem;
-}
-
-div p {
-    background-color: black;
 }
 
 /* HEADER FOR HOMEPAGE */
@@ -198,9 +193,13 @@ nav ul.open {
 
 #hero-img {
     grid-area: hero;
-    background-color: grey;
-    color: white;
+    /* background-color: grey; */
 }
+
+/* .hero {
+    grid-area: hero-img;
+    width: 100%;
+} */
 
 main {
     grid-area: main;
@@ -210,14 +209,13 @@ main {
 
 #event {
     grid-area: event;
-    background-color: grey;
+    background-color: #6D3B47;
     color: white;
 }
 
 #weather {
     grid-area: weather;
-    background-color: grey;
-    color: white;
+    background-color: #6D3B47;
 }
 
 #join {
@@ -228,7 +226,7 @@ main {
 
 #spotlight {
     grid-area: spotlight;
-    background-color: brown;
+    background-color: #6D3B47;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -242,21 +240,21 @@ main {
 
 .spotlight-1 {
     grid-area: spotlight-1;
-    background-color: grey;
+    background-color: #453A49;
     color: white;
     padding: 20px;
 }
 
 .spotlight-2 {
     grid-area: spotlight-2;
-    background-color: grey;
+    background-color: #453A49;
     color: white;
     padding: 20px;
 }
 
 .spotlight-3 {
     grid-area: spotlight-3;
-    background-color: grey;
+    background-color: #453A49;
     color: white;
     padding: 20px;
 }

@@ -92,7 +92,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 13% 1fr 1fr 23% 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 0.2fr 28% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
         "hero hero"
@@ -103,27 +103,155 @@
         "footer footer";
     }
 
-    #hero-img {
+    /* #hero-img {
         grid-area: hero;
+        padding: 20px;
+    } */
+
+    /* START OF HERO SECTION */
+
+    #hero-img img {
+        grid-area: hero;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .welcome h2 {
+        position: absolute;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+
+    .join-us {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 450px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: 600px;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* END OF HERO SECTION */
+
+    /* START OF MAIN SECTION */
+    main {
+        grid-area: main;
+        background-color: #6D3B47;
         padding: 20px;
     }
 
-    main {
-        grid-area: main;
-        padding: 20px;
+    .news-title {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
     }
+
+    .news-p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* END OF MAIN SECTION */
+
 
     #spotlight {
         grid-area: spotlight;
     }
 
     .spotlight-1 {
-        height: 200px;
+        height: 400px;
         margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "tour-title"
+        "tour-img"
+        "tour-p"
+        "line"
+        "tour-contact";
+    }
+
+    .tour-title {
+        grid-area: tour-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .tour-img {
+        width: 20%;
+        grid-area: tour-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour-p {
+        grid-area: tour-p;
+    }
+
+    .line-tour {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .tour-contact {
+        grid-area: tour-contact;
+        /* margin-top: 50px; */
     }
 
     .spotlight-2 {
-        height: 200px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "school-title"
+        "school-img"
+        "school-p"
+        "line"
+        "school-contact";
+    }
+
+    .school-title {
+        grid-area: school-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .school-img {
+        width: 20%;
+        grid-area: school-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .school-p {
+        grid-area: school-p;
+    }
+
+    .line-school {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .school-contact {
+        grid-area: school-contact;
+        /* margin-top: 50px; */
     }
 
     .spotlight-3 {
@@ -132,18 +260,121 @@
 
     #join {
         grid-area: join;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25%;
+        grid-template-areas: 
+        "join-title"
+        "join-p";
         padding: 20px;
+        background-color: #6D3B47;
     }
+
+    .join-title {
+        grid-area: join-title;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .join-p {
+        grid-area: join-p;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* EVENT SECTION */
 
     #event {
         grid-area: event;
         padding: 20px;
     }
 
+    .networking {
+        margin-top: -25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .location {
+        margin-top: -20px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /* WEATHER SECTION */
     #weather {
         grid-area: weather;
         padding: 20px;
+        display: grid;
+        grid-template-columns: 0.2 1fr 1fr 0.2fr;
+        grid-template-rows: 15% 30% 20% 1% 0.2fr;
+        grid-template-areas:
+        ". title title ."
+        ". img img degree"
+        ". . nature nature"
+        "line line line line"
+        ". wind wind .";
+        background-color: #6D3B47;
     }
+
+    .weather-title {
+        grid-area: title;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: -5px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .weather-img {
+        grid-area: img;
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 70%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature {
+        grid-area: nature;
+        margin-top: 60px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: -80px;
+    }
+
+    .wind {
+        grid-area: wind;
+        font-size: 16px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    /* END OF WEATHER SECTION */
 
     /* END OF GRID FOR HOME PAGE */
 
@@ -261,6 +492,10 @@
         gap: 10px;
     }
 
+    .spotlight-3 {
+        display: none;
+    }
+
     #social.close {
         display: none;
     }
@@ -291,7 +526,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 13% 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 0.2fr 28% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
         "hero hero"
@@ -302,36 +537,278 @@
         "footer footer";
     }
 
-    #hero-img {
+    /* #hero-img {
         grid-area: hero;
+        padding: 20px;
+    } */
+
+    /* START OF HERO SECTION */
+
+    #hero-img img {
+        grid-area: hero;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .welcome h2 {
+        position: absolute;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+
+    .join-us {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 450px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: 600px;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* END OF HERO SECTION */
+
+    /* START OF MAIN SECTION */
+    main {
+        grid-area: main;
+        background-color: #6D3B47;
         padding: 20px;
     }
 
-    main {
-        grid-area: main;
-        padding: 20px;
+    .news-title {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
     }
+
+    .news-p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* END OF MAIN SECTION */
+
 
     #spotlight {
         grid-area: spotlight;
     }
 
+    .spotlight-1 {
+        height: 400px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "tour-title"
+        "tour-img"
+        "tour-p"
+        "line"
+        "tour-contact";
+    }
+
+    .tour-title {
+        grid-area: tour-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .tour-img {
+        width: 20%;
+        grid-area: tour-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour-p {
+        grid-area: tour-p;
+    }
+
+    .line-tour {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .tour-contact {
+        grid-area: tour-contact;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-2 {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "school-title"
+        "school-img"
+        "school-p"
+        "line"
+        "school-contact";
+    }
+
+    .school-title {
+        grid-area: school-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .school-img {
+        width: 20%;
+        grid-area: school-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .school-p {
+        grid-area: school-p;
+    }
+
+    .line-school {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .school-contact {
+        grid-area: school-contact;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-3 {
+        display: none;
+    }
+
     #join {
         grid-area: join;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25%;
+        grid-template-areas: 
+        "join-title"
+        "join-p";
         padding: 20px;
+        background-color: #6D3B47;
     }
+
+    .join-title {
+        grid-area: join-title;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .join-p {
+        grid-area: join-p;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* EVENT SECTION */
 
     #event {
         grid-area: event;
         padding: 20px;
     }
 
+    .networking {
+        margin-top: -25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .location {
+        margin-top: -20px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /* WEATHER SECTION */
     #weather {
         grid-area: weather;
         padding: 20px;
+        display: grid;
+        grid-template-columns: 0.2 1fr 1fr 0.2fr;
+        grid-template-rows: 15% 30% 20% 1% 0.2fr;
+        grid-template-areas:
+        ". title title ."
+        ". img img degree"
+        ". . nature nature"
+        "line line line line"
+        ". wind wind .";
+        background-color: #6D3B47;
     }
 
-    /* END OF GRID FOR HOME PAGE */
+    .weather-title {
+        grid-area: title;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: -5px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .weather-img {
+        grid-area: img;
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 70%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature {
+        grid-area: nature;
+        margin-top: 60px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: -80px;
+    }
+
+    .wind {
+        grid-area: wind;
+        font-size: 16px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    /* END OF WEATHER SECTION */
 
     /* FOOTER FOR ALL */
 
@@ -380,6 +857,8 @@
         font-size: 16px;
         border: 1px solid white;
     }
+
+    /* END OF FOOTER FOR ALL*/
 
     /* END OF FOOTER FOR ALL*/
 }
@@ -477,7 +956,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 13% 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 0.2fr 28% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
         "hero hero"
@@ -488,34 +967,278 @@
         "footer footer";
     }
 
-    #hero-img {
+    /* #hero-img {
         grid-area: hero;
+        padding: 20px;
+    } */
+
+    /* START OF HERO SECTION */
+
+    #hero-img img {
+        grid-area: hero;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .welcome h2 {
+        position: absolute;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+
+    .join-us {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 450px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: 600px;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* END OF HERO SECTION */
+
+    /* START OF MAIN SECTION */
+    main {
+        grid-area: main;
+        background-color: #6D3B47;
         padding: 20px;
     }
 
-    main {
-        grid-area: main;
-        padding: 20px;
+    .news-title {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
     }
+
+    .news-p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* END OF MAIN SECTION */
+
 
     #spotlight {
         grid-area: spotlight;
     }
 
+    .spotlight-1 {
+        height: 400px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "tour-title"
+        "tour-img"
+        "tour-p"
+        "line"
+        "tour-contact";
+    }
+
+    .tour-title {
+        grid-area: tour-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .tour-img {
+        width: 20%;
+        grid-area: tour-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour-p {
+        grid-area: tour-p;
+    }
+
+    .line-tour {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .tour-contact {
+        grid-area: tour-contact;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-2 {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "school-title"
+        "school-img"
+        "school-p"
+        "line"
+        "school-contact";
+    }
+
+    .school-title {
+        grid-area: school-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .school-img {
+        width: 20%;
+        grid-area: school-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .school-p {
+        grid-area: school-p;
+    }
+
+    .line-school {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .school-contact {
+        grid-area: school-contact;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-3 {
+        display: none;
+    }
+
     #join {
         grid-area: join;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25%;
+        grid-template-areas: 
+        "join-title"
+        "join-p";
         padding: 20px;
+        background-color: #6D3B47;
     }
+
+    .join-title {
+        grid-area: join-title;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .join-p {
+        grid-area: join-p;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* EVENT SECTION */
 
     #event {
         grid-area: event;
         padding: 20px;
     }
 
+    .networking {
+        margin-top: -25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .location {
+        margin-top: -20px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /* WEATHER SECTION */
     #weather {
         grid-area: weather;
         padding: 20px;
+        display: grid;
+        grid-template-columns: 0.2 1fr 1fr 0.2fr;
+        grid-template-rows: 15% 30% 20% 1% 0.2fr;
+        grid-template-areas:
+        ". title title ."
+        ". img img degree"
+        ". . nature nature"
+        "line line line line"
+        ". wind wind .";
+        background-color: #6D3B47;
     }
+
+    .weather-title {
+        grid-area: title;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: -5px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .weather-img {
+        grid-area: img;
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 70%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature {
+        grid-area: nature;
+        margin-top: 60px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: -80px;
+    }
+
+    .wind {
+        grid-area: wind;
+        font-size: 16px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    /* END OF WEATHER SECTION */
 
     /* END OF GRID FOR HOME PAGE */
 

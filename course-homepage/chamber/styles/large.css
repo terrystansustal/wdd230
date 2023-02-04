@@ -83,7 +83,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
-        grid-template-rows: 20% 1fr 1fr 1fr 0.2fr;
+        grid-template-rows: 20% 20% 20% 16% 0.2fr;
         grid-template-areas:
         "header header header header header"
         ". event hero spotlight ."
@@ -106,36 +106,332 @@
         padding: 20px;
     }
 
-    #hero-img {
+    /* HERO SECTION */
+
+    #hero-img img {
         grid-area: hero;
-        padding: 20px;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
+
+    .welcome h2 {
+        position: absolute;
+        margin-top: -600px;
+        margin-left: 150px;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+
+        /* opacity: 100%; */
+        /* z-index: 1; */
+    }
+
+    .join-us {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 450px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: 600px;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* END OF HERO SECTION */
+
+    /* START OF MAIN SECTIONS */
 
     main {
         grid-area: main;
+        background-color: #6D3B47;
         padding: 20px;
     }
+
+    .news-title {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .news-p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+    /* END OF MAIN SECTION */
+
+    /* SPOTLIGHT SECTION */
 
     #spotlight {
         grid-area: spotlight;
     }
 
+    /* SPOTLIGHT 1 */
+
+    .spotlight-1 {
+        grid-area: spotlight-1;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "tour-title"
+        "tour-img"
+        "tour-p"
+        "line"
+        "tour-contact";
+    }
+
+    .tour-title {
+        grid-area: tour-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .tour-img {
+        width: 20%;
+        grid-area: tour-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour-p {
+        grid-area: tour-p;
+    }
+
+    .line-tour {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .tour-contact {
+        grid-area: tour-contact;
+        /* margin-top: 50px; */
+    }
+
+    /* SPOTLIGHT 2 */
+
+    .spotlight-2 {
+        grid-area: spotlight-2;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "school-title"
+        "school-img"
+        "school-p"
+        "line"
+        "school-contact";
+    }
+
+    .school-title {
+        grid-area: school-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .school-img {
+        width: 20%;
+        grid-area: school-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .school-p {
+        grid-area: school-p;
+    }
+
+    .line-school {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .school-contact {
+        grid-area: school-contact;
+        /* margin-top: 50px; */
+    }
+
+    /* SPOTLIGHT 3 */
+
+    .spotlight-3 {
+        grid-area: spotlight-3;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "blood-drive-title"
+        "blood-drive-img"
+        "blood-drive-p"
+        "line"
+        "blood-drive-contact";
+    }
+
+    .blood-drive-title {
+        grid-area: blood-drive-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .blood-drive-img {
+        width: 15%;
+        grid-area: blood-drive-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blood-drive-p {
+        grid-area: blood-drive-p;
+    }
+
+    .line-blood-drive {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .blood-drive-contact {
+        grid-area: blood-drive-contact;
+        /* margin-top: 50px; */
+    }
+
+    /* END OF SPOTLIGHT SECTION */
+
+    /* JOIN SECTIONS */
+
     #join {
         grid-area: join;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 75%;
+        grid-template-areas: 
+        "join-title"
+        "join-p";
         padding: 20px;
+        background-color: #6D3B47;
     }
+
+    .join-title {
+        grid-area: join-title;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .join-p {
+        grid-area: join-p;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* END OF JOIN SECTIONS */
+
+    /* EVENT SECTION */
 
     #event {
         grid-area: event;
         padding: 20px;
     }
 
+    .networking {
+        margin-top: -25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .location {
+        margin-top: -20px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /* END OF EVENT SECTION */
+
+    /* WEATHER SECTION */
     #weather {
         grid-area: weather;
         padding: 20px;
+        display: grid;
+        grid-template-columns: 0.2 1fr 1fr 0.2fr;
+        grid-template-rows: 15% 30% 20% 1% 0.2fr;
+        grid-template-areas:
+        ". title title ."
+        ". img img degree"
+        ". . nature nature"
+        "line line line line"
+        ". wind wind .";
+        background-color: #6D3B47;
     }
 
+    .weather-title {
+        grid-area: title;
+        text-align: right;
+        margin-left: 50px;
+        margin-top: -5px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .weather-img {
+        grid-area: img;
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 70%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature {
+        grid-area: nature;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: 30px;
+    }
+
+    .wind {
+        grid-area: wind;
+        font-size: 16px;
+        color: white;
+        margin-top: 25px;
+    }
+
+    /* END OF WEATHER SECTION */
+
     /* END OF GRID FOR HOME PAGE */
+
+
 
     /* FOOTER FOR ALL PAGE */
 
@@ -147,6 +443,134 @@
     /* END OF FOOTER FOR ALL PAGE */
 }
 
+@media only screen and (max-width: 1400px) {
+    .join-us {
+        margin-top: -70px;
+        margin-left: 400px;
+        font-size: 24px;
+    }
+
+    .networking {
+        margin-top: -25px;
+        font-size: 26px;
+    }
+
+    .location {
+        margin-top: -20px;
+        font-size: 20px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .nature {
+        font-size: 16px;
+    }
+
+    .join-title {
+        font-size: 19px;
+    }
+
+    .join-p {
+        margin-top: 2px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .join-us {
+        margin-top: -70px;
+        margin-left: 380px;
+        font-size: 24px;
+    }
+
+    .networking {
+        margin-top: -25px;
+        font-size: 19px;
+    }
+
+    .location {
+        margin-top: -20px;
+        font-size: 17px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .weather-title {
+        font-size: 19px;
+    }
+
+    .weather-img {
+        width: 70%;
+    }
+
+    .degree {
+        font-size: 20px;
+    }
+
+    .nature {
+        font-size: 16px;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: 30px;
+    }
+
+    .wind {
+        font-size: 14px;
+    }
+
+    .join-title {
+        font-size: 19px;
+    }
+
+    .join-p {
+        margin-top: 2px;
+        font-size: 14px;
+    }
+
+    .news-title {
+        font-size: 20px;
+    }
+
+    .news-p {
+        font-size: 17px;
+    }
+
+    .tour-title {
+        font-size: 19px;
+    }
+
+    .tour-img {
+        width: 15%;
+    }
+
+    .school-title {
+        font-size: 19px;
+    }
+
+    .school-img {
+        width: 15%;
+    }
+
+    .blood-drive-title {
+        font-size: 19px;
+    }
+
+    .blood-drive-img {
+        width: 12%;
+    }
+}
+
 @media only screen and (max-width: 1285px) {
 
     /* HEADER FOR ALL PAGE */
@@ -156,6 +580,18 @@
 
     #title {
         font-size: 1.5em;
+    }
+
+    .welcome h2 {
+        margin-top: -600px;
+        margin-left: 150px;
+        font-size: 30px;
+    }
+
+    .join-us {
+        margin-top: -70px;
+        margin-left: 220px;
+        font-size: 24px;
     }
 
     /* nav a {
@@ -177,6 +613,18 @@
         font-size: 1.3em;
     }
 
+    .welcome h2 {
+        margin-top: -600px;
+        margin-left: 100px;
+        font-size: 20px;
+    }
+
+    .join-us {
+        margin-top: -70px;
+        margin-left: 100px;
+        font-size: 24px;
+    }
+
     nav a {
         font-size: 1.2em;
     }
@@ -194,6 +642,18 @@
 
     #title {
         font-size: 1.3em;
+    }
+
+    .welcome h2 {
+        margin-top: -600px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    .join-us {
+        margin-top: -70px;
+        margin-left: 50px;
+        font-size: 24px;
     }
 
     nav a {
