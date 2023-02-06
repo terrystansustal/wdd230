@@ -1,5 +1,6 @@
 @media only screen and (min-width: 895px) and (max-width: 959px) {
 
+
     /* HEADER FOR HOME PAGE */
 
     header {
@@ -92,15 +93,25 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
+        "meet meet"
         "hero hero"
         "main main"
         "spotlight spotlight"
         "join join"
         "event weather"
         "footer footer";
+    }
+
+    #meet-greet {
+        background-color: #6D3B47;
+        padding: 5px;
+        border: 1px solid white;
+        text-align: center;
+        grid-area: meet;
+        color: white;
     }
 
     /* #hero-img {
@@ -526,15 +537,25 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
+        "meet meet"
         "hero hero"
         "main main"
         "spotlight spotlight"
         "join join"
         "event weather"
         "footer footer";
+    }
+
+    #meet-greet {
+        background-color: #6D3B47;
+        padding: 5px;
+        border: 1px solid white;
+        text-align: center;
+        grid-area: meet;
+        color: white;
     }
 
     /* #hero-img {
@@ -866,6 +887,7 @@
 @media only screen and (min-width: 831px) and (max-width: 894px) {
     /* HEADER FOR HOME PAGE */
 
+
     header {
         grid-area: header;
         grid-template-columns: 1fr 3fr 0.8fr 1fr;
@@ -956,15 +978,25 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
+        "meet meet"
         "hero hero"
         "main main"
         "spotlight spotlight"
         "join join"
         "event weather"
         "footer footer";
+    }
+
+    #meet-greet {
+        background-color: #6D3B47;
+        padding: 5px;
+        border: 1px solid white;
+        text-align: center;
+        grid-area: meet;
+        color: white;
     }
 
     /* #hero-img {

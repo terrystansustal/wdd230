@@ -58,15 +58,25 @@
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 8% 1fr 0.3fr 1fr 0.3fr 25% 0.2fr;
+        grid-template-rows: 8% 2% 1fr 0.3fr 1fr 0.3fr 25% 0.2fr;
         grid-template-areas:
         "header"
+        "meet"
         "hero"
         "event"
         "weather"
         "main"
         "spotlight"
         "footer";
+    }
+
+    #meet-greet {
+        background-color: #6D3B47;
+        padding: 5px;
+        border: 1px solid white;
+        text-align: center;
+        grid-area: meet;
+        color: white;
     }
 
     /* START OF HERO SECTION */
@@ -444,15 +454,25 @@
 
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 8% 1fr 0.3fr 1fr 0.3fr 25% 0.2fr;
+        grid-template-rows: 8% 2% 1fr 0.3fr 1fr 0.3fr 25% 0.2fr;
         grid-template-areas:
         "header"
+        "meet"
         "hero"
         "event"
         "weather"
         "main"
         "spotlight"
         "footer";
+    }
+
+    #meet-greet {
+        background-color: #6D3B47;
+        padding: 5px;
+        border: 1px solid white;
+        text-align: center;
+        grid-area: meet;
+        color: white;
     }
 
     /* START OF HERO SECTION */

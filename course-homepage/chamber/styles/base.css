@@ -182,6 +182,8 @@ nav ul.open {
     display: grid;
     grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
     grid-template-rows: 12% 2fr 2fr 1fr 0.2fr;
+    grid-template-rows: 12% 20% 2fr 2fr 1fr 0.2fr;
+
     grid-template-areas:
     "header header header header header"
     ". event hero spotlight ."
@@ -189,6 +191,10 @@ nav ul.open {
     ". join main spotlight ."
     "footer footer footer footer footer";
     gap: 10px;
+}
+
+#meet-greet {
+    color: brown;
 }
 
 #hero-img {
