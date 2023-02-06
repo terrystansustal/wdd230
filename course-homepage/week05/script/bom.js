@@ -3,6 +3,14 @@ const button = document.querySelector("button");
 const list = document.querySelector("ul");
 
 button.addEventListener("click", () => {
+
+    // Show an error message if the input is empty
+    if (input.value === "") {
+        
+        alert('Please enter a Book and Chapter before clicking "Add Chapter".')
+        return;
+      }
+
     const myChapter = input.value;
     input.value = "";
 
