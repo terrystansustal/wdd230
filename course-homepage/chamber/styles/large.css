@@ -147,7 +147,7 @@
         cursor: pointer;
         border: 1px solid black;
         border-radius: 8px;
-        font-weight: 600px;
+        font-weight: bold;
         font-family: 'Merriweather', serif;
         font-size: 24px;
         color: white;
@@ -378,7 +378,7 @@
         grid-area: weather;
         padding: 20px;
         display: grid;
-        grid-template-columns: 0.2 1fr 1fr 0.2fr;
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
         grid-template-rows: 15% 30% 20% 1% 0.2fr;
         grid-template-areas:
         ". title title ."
@@ -416,9 +416,9 @@
 
     .nature {
         grid-area: nature;
-        margin-top: 30px;
+        margin-top: 45px;
         margin-left: 30px;
-        font-size: 20px;
+        font-size: 18px;
         color: white;
         font-family: 'Merriweather', serif;
     }
@@ -525,7 +525,7 @@
     }
 
     .nature {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .line {
@@ -603,6 +603,10 @@
         font-size: 24px;
     }
 
+    .nature {
+        font-size: 12px;
+    }
+
     /* nav a {
         font-size: 1em;
     } */
@@ -638,6 +642,9 @@
         font-size: 1.2em;
     }
 
+    .nature {
+        font-size: 12px;
+    }
     /* END OF HEADER FOR ALL PAGE */
 }
 

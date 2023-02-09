@@ -213,9 +213,17 @@ main {
     color: white;
 }
 
+#news-link {
+    color: white;
+}
+
 #event {
     grid-area: event;
     background-color: #6D3B47;
+    color: white;
+}
+
+#more-info {
     color: white;
 }
 
