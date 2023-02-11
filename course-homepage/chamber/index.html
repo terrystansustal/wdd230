@@ -18,7 +18,9 @@
     <header>
         <a href="#">
             <!-- <img class="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence"> -->
-            <img id="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence">
+            <!-- <img id="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence"> -->
+            <img id="logo" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
+
 
         </a>
         
@@ -60,8 +62,12 @@
     </div>
 
     <div id="hero-img">
+        <picture>
         <!-- <img class="hero" src="images/hero.jpg" alt="Hero image"> -->
-        <img src="images/hero.jpg" alt="Hero image">
+            <source media="(max-width: 767px)" srcset="images/hero.767.jpg">
+            <source media="(max-width: 959px)" srcset="images/hero.959.jpg">
+            <img src="images/hero.1400.jpg" alt="Hero image">
+        </picture>
 
         <section class="welcome">
             <h2>Welcome to Daly City</h2>
@@ -109,7 +115,7 @@
         <h3 class="weather-title">Weather</h3>
 
         <section class="degree">
-            <p>55°C</p>
+            <p><span id="temperature">55</span>°F</p>
         </section>
         
         <section class="nature">
@@ -118,9 +124,9 @@
 
         <div class="line"></div>
 
-        <section class="wind">
-            <p>Wind speed: 10mph <br>
-            Wind chill: N/A</p>
+        <section class="wind" id="wind-chill">
+            <p>Wind speed: <span id="wind-speed">10</span>mph</p>
+            <p>Wind chill: N/A</p>
         </section>
     </div>
 
@@ -201,7 +207,7 @@
 
     <footer>
         <a id="logo-link" href="#">
-            <img class="logo-footer" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence">
+            <img class="logo-footer" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
         </a>
 
         <h3 class="site-name-footer">Daly City<br>Chamber of Commence</h3>
@@ -218,6 +224,7 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/current-year.js"></script>
     <script src="scripts/last-modified.js"></script>
+    <script src="scripts/windchill.js"></script>
     
 </body>
 </html>
