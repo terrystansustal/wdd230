@@ -1,0 +1,28 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* CSS for first method */
+
+/* div img[data-src] {
+    filter: blur(0.5em);
+    transition: filter 1s;
+}
+
+div img.loaded {
+    filter: blur(0em);
+} */
+
+/* CSS for second method */
+div img[data-src] {
+    filter: blur(0.5em);
+}
+  
+div img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
