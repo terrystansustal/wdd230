@@ -538,6 +538,14 @@
         display: block;
         width: 40%;
         float: right;
+        border: 10px solid white;
+        transition: transform .3s;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .discover-img:hover {
+        opacity: .6;
+        transform: scale(1.1);
     }
                             
                                     /* --------------- CSS FOR DISCOVER PAGE --------------- */
@@ -1085,6 +1093,14 @@
         display: block;
         width: 40%;
         float: right;
+        border: 10px solid white;
+        transition: transform .3s;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .discover-img:hover {
+        opacity: .6;
+        transform: scale(1.1);
     }
                                                                                                 
                                         /* --------------- CSS FOR DISCOVER PAGE --------------- */
@@ -1634,6 +1650,14 @@
         display: block;
         width: 40%;
         float: right;
+        border: 10px solid white;
+        transition: transform .3s;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .discover-img:hover {
+        opacity: .6;
+        transform: scale(1.1);
     }
                                                             
                                     /* --------------- CSS FOR DISCOVER PAGE --------------- */
