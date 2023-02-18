@@ -164,9 +164,9 @@ nav ul.open {
 
 #date {
     grid-area: date;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
+    text-align: center;
+    padding: 15px;
     border: 1px solid white;
     height: 50px;
     margin-top: 40px;

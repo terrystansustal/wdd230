@@ -74,6 +74,16 @@
         height: auto;
     }
 
+    #date {
+        grid-area: date;
+        display: inline;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid white;
+        height: 50px;
+        margin-top: 40px;
+    }
+
     /* END OF HEADER FOR ALL PAGE */
 
     /* GRID FOR HOME PAGE */
@@ -450,9 +460,159 @@
     }
 
     /* END OF FOOTER FOR ALL PAGE */
+
+
+                                    /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        /* width: 400px; */
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .discover-img {
+        display: block;
+        width: 80%;
+        margin-bottom: 50px;
+        /* float: right; */
+    }
+                                                                                                
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1351px) and (max-width: 1400px) {
+
+    #date {
+        grid-area: date;
+        display: inline;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid white;
+        height: 50px;
+        margin-top: 40px;
+    }
+
     .join-us {
         margin-top: -70px;
         margin-left: 400px;
@@ -487,9 +647,158 @@
         margin-top: 2px;
         font-size: 16px;
     }
+
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        /* width: 400px; */
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .discover-img {
+        display: block;
+        width: 80%;
+        margin-bottom: 50px;
+        /* float: right; */
+    }
+                                                                                                                                    
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (min-width: 1286px) and (max-width: 1350px) {
+
+    #date {
+        grid-area: date;
+        display: inline;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid white;
+        height: 50px;
+        margin-top: 40px;
+    }
+
     .join-us {
         margin-top: -70px;
         margin-left: 380px;
@@ -578,9 +887,158 @@
     .blood-drive-img {
         width: 12%;
     }
+
+
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        /* width: 400px; */
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .discover-img {
+        display: block;
+        width: 80%;
+        margin-bottom: 50px;
+        /* float: right; */
+    }
+                                                                                                                                    
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
 
-@media only screen and (max-width: 1285px) {
+@media only screen and (min-width: 1113px) and (max-width: 1285px) {
+
+    #date {
+        grid-area: date;
+        display: inline;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid white;
+        height: 50px;
+        margin-top: 40px;
+    }
 
     /* HEADER FOR ALL PAGE */
     /* .title {
@@ -612,9 +1070,159 @@
     } */
 
     /* END OF HEADER FOR ALL PAGE */
+
+
+
+
+                                    /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        /* width: 400px; */
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .discover-img {
+        display: block;
+        width: 80%;
+        margin-bottom: 50px;
+        /* float: right; */
+    }                                                                                                                                 
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
 
-@media only screen and (max-width: 1112px) {
+@media only screen and (min-width: 1042px) and (max-width: 1112px) {
+
+    #date {
+        grid-area: date;
+        display: inline;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid white;
+        height: 50px;
+        margin-top: 40px;
+    }
     
     /* HEADER FOR ALL PAGE */
 
@@ -646,9 +1254,159 @@
         font-size: 12px;
     }
     /* END OF HEADER FOR ALL PAGE */
+
+
+
+
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        /* width: 400px; */
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .discover-img {
+        display: block;
+        width: 80%;
+        /* float: right; */
+    }
+                                                                                                                                    
+                                            /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
 
-@media only screen and (max-width: 1043px) {
+@media only screen and (min-width: 961px) and (max-width: 1043px) {
+
+    #date {
+        grid-area: date;
+        display: inline;
+        text-align: center;
+        padding: 15px;
+        border: 1px solid white;
+        height: 50px;
+        margin-top: 40px;
+    }
 
      /* HEADER FOR ALL PAGE */
 
@@ -677,4 +1435,141 @@
     }
 
     /* END OF HEADER FOR ALL PAGE */
+
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        /* width: 400px; */
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        display: grid;
+        grid-template-columns: 50% 5% 50%;
+        grid-template-rows: 0.3fr 50%;
+        grid-template-areas:
+        "title . ."
+        "paragraph . img";
+        margin-top: 25px;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .discover-img {
+        display: block;
+        width: 80%;
+        /* float: right; */
+    }
+                                                                                                                                    
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }

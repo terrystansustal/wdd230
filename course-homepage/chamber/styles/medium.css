@@ -438,6 +438,656 @@
     }
 
     /* END OF FOOTER FOR ALL*/
+
+                                    /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        width: 480px;
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+    }
+
+    /* section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    } */
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    .discover-img {
+        display: block;
+        width: 40%;
+        float: right;
+    }
+                            
+                                    /* --------------- CSS FOR DISCOVER PAGE --------------- */
+}
+
+
+
+@media only screen and (min-width: 831px) and (max-width: 894px) {
+    /* HEADER FOR HOME PAGE */
+
+
+    header {
+        grid-area: header;
+        grid-template-columns: 1fr 3fr 0.8fr 1fr;
+        grid-template-rows: 0.5fr 0.2fr;
+        grid-template-areas:
+        "logo title social button"
+        "date date date date";
+    }
+
+    /* .logo {
+        grid-area: logo;
+        width: 100%;
+        height: auto;
+    } */
+
+    #logo {
+        grid-area: logo;
+        width: 100%;
+        height: auto;
+    }
+    
+
+    /* .title {
+        z-index: 1;
+        grid-area: title;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+    }
+
+    .social {
+        grid-area: social;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    } */
+
+    #logo.close {
+        display: none;
+    }
+
+    #title {
+        z-index: 1;
+        grid-area: title;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+    }
+
+    #title.close {
+        display: none;
+    }
+
+    #social {
+        grid-area: social;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #social.close {
+        display: none;
+    }
+
+    #date.close {
+        display: none;
+    }
+
+    .social-img {
+        width: 50px;
+        height: auto;
+    }
+
+    nav {
+        grid-area: button;
+        /* margin-top: 500px; */
+    }
+
+    .open {
+        width: 780px;
+        text-align: left;
+    }
+
+
+    /* END OF HEADER FOR HOME PAGE */
+
+    /* GRID OF HOME PAGE */
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-areas:
+        "header header"
+        "meet meet"
+        "hero hero"
+        "main main"
+        "spotlight spotlight"
+        "join join"
+        "event weather"
+        "footer footer";
+    }
+
+    #meet-greet {
+        background-color: #6D3B47;
+        padding: 5px;
+        border: 1px solid white;
+        text-align: center;
+        grid-area: meet;
+        color: white;
+    }
+
+    /* #hero-img {
+        grid-area: hero;
+        padding: 20px;
+    } */
+
+    /* START OF HERO SECTION */
+
+    #hero-img img {
+        grid-area: hero;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .welcome h2 {
+        position: absolute;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+
+    .join-us {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: 450px;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-weight: bold;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* END OF HERO SECTION */
+
+    /* START OF MAIN SECTION */
+    main {
+        grid-area: main;
+        background-color: #6D3B47;
+        padding: 20px;
+    }
+
+    .news-title {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .news-p {
+        color: white;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    /* END OF MAIN SECTION */
+
+
+    #spotlight {
+        grid-area: spotlight;
+    }
+
+    .spotlight-1 {
+        height: 400px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "tour-title"
+        "tour-img"
+        "tour-p"
+        "line"
+        "tour-contact";
+    }
+
+    .tour-title {
+        grid-area: tour-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .tour-img {
+        width: 20%;
+        grid-area: tour-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour-p {
+        grid-area: tour-p;
+    }
+
+    .line-tour {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .tour-contact {
+        grid-area: tour-contact;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-2 {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-areas: 
+        "school-title"
+        "school-img"
+        "school-p"
+        "line"
+        "school-contact";
+    }
+
+    .school-title {
+        grid-area: school-title;
+        font-size: 24px;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .school-img {
+        width: 20%;
+        grid-area: school-img;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .school-p {
+        grid-area: school-p;
+    }
+
+    .line-school {
+        grid-area: line;
+        border-top: 1px solid white;
+    }
+
+    .school-contact {
+        grid-area: school-contact;
+        /* margin-top: 50px; */
+    }
+
+    .spotlight-3 {
+        display: none;
+    }
+
+    #join {
+        grid-area: join;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 25%;
+        grid-template-areas: 
+        "join-title"
+        "join-p";
+        padding: 20px;
+        background-color: #6D3B47;
+    }
+
+    .join-title {
+        grid-area: join-title;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .join-p {
+        grid-area: join-p;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* EVENT SECTION */
+
+    #event {
+        grid-area: event;
+        padding: 20px;
+    }
+
+    .networking {
+        margin-top: -25px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .location {
+        margin-top: -20px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+    }
+
+    .networking-p {
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /* WEATHER SECTION */
+    #weather {
+        grid-area: weather;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 15% 30% 20% 1% 0.2fr;
+        grid-template-areas:
+        ". title title ."
+        ". img img degree"
+        ". . nature nature"
+        "line line line line"
+        ". wind wind .";
+        background-color: #6D3B47;
+    }
+
+    .weather-title {
+        grid-area: title;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: -5px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+
+    .weather-img {
+        grid-area: img;
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 70%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature {
+        grid-area: nature;
+        margin-top: 60px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: -80px;
+    }
+
+    .wind {
+        grid-area: wind;
+        font-size: 16px;
+        color: white;
+        margin-top: 40px;
+    }
+
+    /* END OF WEATHER SECTION */
+
+    /* END OF GRID FOR HOME PAGE */
+
+    /* FOOTER FOR ALL */
+
+    footer {
+        grid-area: footer;
+        background-color: #6D3B47;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas:
+        "logo-footer site info"
+        "copy copy copy";
+    }
+    
+    .logo-footer {
+        grid-area: logo-footer;
+        width: 50%;
+        height: auto;
+        margin-left: 3em;
+        margin-top: 2em;
+    }
+    
+    .site-name-footer {
+        grid-area: site;  
+    }
+    
+    .info {
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        margin-left: -10px;
+    }
+    
+    .copy {
+        grid-area: copy;
+        padding-top: 13px;
+        display: inline;
+        text-align: center;
+        color: white;
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        border: 1px solid white;
+    }
+
+    /* END OF FOOTER FOR ALL*/
+
+
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .h3-discover {
+        text-align: left;
+        font-family: 'Merriweather', serif;
+        font-size: 24px;
+    }
+
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        text-align: left;
+        line-height: 3em;
+        width: 450px;
+    }
+
+    section img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .container-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
+    }
+
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
+    }
+
+    .discover-h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: white;
+    }
+
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
+    }
+
+    section h3.h3-discover {
+        grid-area: title;
+    }
+
+    section img.discover-img {
+        grid-area: img;
+    }
+
+    section p.discover-p {
+        grid-area: paragraph;
+    }
+
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
+    }
+
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
+    }
+
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
+    }
+
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+
+    .discover-img {
+        display: block;
+        width: 40%;
+        float: right;
+    }
+                                                                                                
+                                        /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 830px) {
@@ -882,445 +1532,110 @@
     /* END OF FOOTER FOR ALL*/
 
     /* END OF FOOTER FOR ALL*/
-}
-
-@media only screen and (min-width: 831px) and (max-width: 894px) {
-    /* HEADER FOR HOME PAGE */
 
 
-    header {
-        grid-area: header;
-        grid-template-columns: 1fr 3fr 0.8fr 1fr;
-        grid-template-rows: 0.5fr 0.2fr;
-        grid-template-areas:
-        "logo title social button"
-        "date date date date";
-    }
 
-    /* .logo {
-        grid-area: logo;
-        width: 100%;
-        height: auto;
-    } */
+                                    /* --------------- CSS FOR DISCOVER PAGE --------------- */
 
-    #logo {
-        grid-area: logo;
-        width: 100%;
-        height: auto;
-    }
-    
-
-    /* .title {
-        z-index: 1;
-        grid-area: title;
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-    }
-
-    .social {
-        grid-area: social;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    } */
-
-    #logo.close {
-        display: none;
-    }
-
-    #title {
-        z-index: 1;
-        grid-area: title;
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
-    }
-
-    #title.close {
-        display: none;
-    }
-
-    #social {
-        grid-area: social;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #social.close {
-        display: none;
-    }
-
-    #date.close {
-        display: none;
-    }
-
-    .social-img {
-        width: 50px;
-        height: auto;
-    }
-
-    nav {
-        grid-area: button;
-        /* margin-top: 500px; */
-    }
-
-    .open {
-        width: 780px;
+    .h3-discover {
         text-align: left;
-    }
-
-
-    /* END OF HEADER FOR HOME PAGE */
-
-    /* GRID OF HOME PAGE */
-
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
-        grid-template-areas:
-        "header header"
-        "meet meet"
-        "hero hero"
-        "main main"
-        "spotlight spotlight"
-        "join join"
-        "event weather"
-        "footer footer";
-    }
-
-    #meet-greet {
-        background-color: #6D3B47;
-        padding: 5px;
-        border: 1px solid white;
-        text-align: center;
-        grid-area: meet;
-        color: white;
-    }
-
-    /* #hero-img {
-        grid-area: hero;
-        padding: 20px;
-    } */
-
-    /* START OF HERO SECTION */
-
-    #hero-img img {
-        grid-area: hero;
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .welcome h2 {
-        position: absolute;
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 100px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 25px;
-    }
-
-    .join-us {
-        position: absolute;
-        margin-top: -70px;
-        margin-left: 450px;
-        padding: 10px;
-        cursor: pointer;
-        border: 1px solid black;
-        border-radius: 8px;
-        font-weight: bold;
         font-family: 'Merriweather', serif;
         font-size: 24px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
     }
 
-    /* END OF HERO SECTION */
-
-    /* START OF MAIN SECTION */
-    main {
-        grid-area: main;
-        background-color: #6D3B47;
-        padding: 20px;
-    }
-
-    .news-title {
-        color: white;
-        font-size: 24px;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .news-p {
-        color: white;
-        font-size: 20px;
+    .discover-p {
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
         text-align: left;
+        line-height: 3em;
+        width: 400px;
     }
 
-    /* END OF MAIN SECTION */
-
-
-    #spotlight {
-        grid-area: spotlight;
+    section img[data-src] {
+        filter: blur(0.5em);
     }
 
-    .spotlight-1 {
-        height: 400px;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "tour-title"
-        "tour-img"
-        "tour-p"
-        "line"
-        "tour-contact";
+    section img {
+        filter: blur(0em);
+        transition: filter 0.5s;
     }
 
-    .tour-title {
-        grid-area: tour-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
-    }
-
-    .tour-img {
-        width: 20%;
-        grid-area: tour-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .tour-p {
-        grid-area: tour-p;
-    }
-
-    .line-tour {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .tour-contact {
-        grid-area: tour-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-2 {
-        height: 400px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "school-title"
-        "school-img"
-        "school-p"
-        "line"
-        "school-contact";
-    }
-
-    .school-title {
-        grid-area: school-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
-    }
-
-    .school-img {
-        width: 20%;
-        grid-area: school-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .school-p {
-        grid-area: school-p;
-    }
-
-    .line-school {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .school-contact {
-        grid-area: school-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-3 {
-        display: none;
-    }
-
-    #join {
-        grid-area: join;
+    .container-discover {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 25% 25%;
-        grid-template-areas: 
-        "join-title"
-        "join-p";
-        padding: 20px;
-        background-color: #6D3B47;
+        grid-template-rows: 10% 5fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px
     }
 
-    .join-title {
-        grid-area: join-title;
-        cursor: pointer;
-        font-size: 24px;
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-template-areas:
+        "heading"
+        "activity"
+        "beach"
+        "restaurants"
+        "population"
+        "school"
+        ".";
     }
 
-    .join-p {
-        grid-area: join-p;
-        margin-top: 40px;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    /* EVENT SECTION */
-
-    #event {
-        grid-area: event;
-        padding: 20px;
-    }
-
-    .networking {
-        margin-top: -25px;
+    .discover-h2 {
         text-align: center;
         font-family: 'Roboto', sans-serif;
-        font-size: 26px;
+        font-size: 32px;
+        color: white;
     }
 
-    .location {
-        margin-top: -20px;
-        text-align: center;
-        font-family: 'Merriweather', serif;
-        font-size: 20px;
+    .activity {
+        grid-area: activity;
+        border-top: 2px solid white;
     }
 
-    .networking-p {
-        text-align: center;
-        font-family: 'Merriweather', serif;
-        font-size: 20px;
-        margin-top: 50px;
-    }
-
-    /* WEATHER SECTION */
-    #weather {
-        grid-area: weather;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
-        grid-template-rows: 15% 30% 20% 1% 0.2fr;
-        grid-template-areas:
-        ". title title ."
-        ". img img degree"
-        ". . nature nature"
-        "line line line line"
-        ". wind wind .";
-        background-color: #6D3B47;
-    }
-
-    .weather-title {
+    section h3.h3-discover {
         grid-area: title;
-        text-align: center;
-        margin-left: 50px;
-        margin-top: -5px;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
     }
 
-    .weather-img {
+    section img.discover-img {
         grid-area: img;
-        margin-top: -50px;
-        margin-left: -10px;
-        width: 70%;
     }
 
-    .degree {
-        grid-area: degree;
-        /* margin-left: -10px; */
-        font-size: 30px;
-        color: white;
-        font-family: 'Merriweather', serif;
+    section p.discover-p {
+        grid-area: paragraph;
     }
 
-    .nature {
-        grid-area: nature;
-        margin-top: 60px;
-        margin-left: 30px;
-        font-size: 20px;
-        color: white;
-        font-family: 'Merriweather', serif;
+    .beach {
+        grid-area: beach;
+        border-top: 2px solid white;
     }
 
-    .line {
-        grid-area: line;
-        border-top: 1px solid white;
-        margin-top: -80px;
+    .restaurants {
+        grid-area: restaurants;
+        border-top: 2px solid white;
     }
 
-    .wind {
-        grid-area: wind;
-        font-size: 16px;
-        color: white;
-        margin-top: 40px;
+    .population {
+        grid-area: population;
+        border-top: 2px solid white;
     }
 
-    /* END OF WEATHER SECTION */
-
-    /* END OF GRID FOR HOME PAGE */
-
-    /* FOOTER FOR ALL */
-
-    footer {
-        grid-area: footer;
-        background-color: #6D3B47;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 0.5fr;
-        grid-template-areas:
-        "logo-footer site info"
-        "copy copy copy";
-    }
-    
-    .logo-footer {
-        grid-area: logo-footer;
-        width: 50%;
-        height: auto;
-        margin-left: 3em;
-        margin-top: 2em;
-    }
-    
-    .site-name-footer {
-        grid-area: site;  
-    }
-    
-    .info {
-        grid-area: info;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-family: 'Merriweather', serif;
-        font-size: 20px;
-        margin-left: -10px;
-    }
-    
-    .copy {
-        grid-area: copy;
-        padding-top: 13px;
-        display: inline;
-        text-align: center;
-        color: white;
-        font-family: 'Merriweather', serif;
-        font-size: 16px;
-        border: 1px solid white;
+    .school {
+        grid-area: school;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
     }
 
-    /* END OF FOOTER FOR ALL*/
+    .discover-img {
+        display: block;
+        width: 40%;
+        float: right;
+    }
+                                                            
+                                    /* --------------- CSS FOR DISCOVER PAGE --------------- */
 }
+

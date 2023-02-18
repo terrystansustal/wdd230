@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="The Daly City Chamber of Commence supports all local businesses. We support local
+    entrepreneurs by hosting local events such as networking. We believe that through the power of networking, people will help
+    and support one another's career or business.">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+</head>
+<body class="container-discover">
+    <header>
+        <a href="#">
+            <!-- <img class="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence"> -->
+            <!-- <img id="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence"> -->
+            <img id="logo" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
+        </a>
+        
+        <nav>
+<button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- <div class="social"> -->
+        <div id="social">
+            <a href="#">
+                <img class="social-img" src="images/facebook.png" alt="Facebook logo">
+            </a>
+            <a href="#">
+                <img class="social-img" src="images/instagram.png" alt="Instagram logo">
+            </a>
+        </div>
+
+        <!-- <h1 class="title">Daly City<br>Chamber of Commence</h1> -->
+        <h1 id="title">Daly City<br>Chamber of Commence</h1>
+
+        <!-- <p class="date"><span id="todayDate"></span></p> -->
+        <p id="date"><span id="todayDate"></span> | Number of Visits: <span id="todayVisit"></span></p>
+
+    </header>
+
+    <main class="main-discover">
+
+        <h2 class="discover-h2">Fun Places to Explore!</h2>
+
+        <section class="activity">
+            <h3 class="h3-discover">Activity</h3>
+            <img class="discover-img" src="images/discover/placeholder.jpg" data-src="images/discover/activity.jpg" alt="A mom and baby going on a hike.">
+            <p class="discover-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Feugiat sed lectus vestibulum mattis.
+                Sed risus ultricies tristique nulla. Consectetur adipiscing elit duis tristique sollicitudin.
+            </p>
+        </section>
+
+        <section class="beach">
+            <h3 class="h3-discover">Beach</h3>
+            <img class="discover-img" src="images/discover/placeholder.jpg" data-src="images/discover/beach.jpg" alt="A photo of the beach.">
+            <p class="discover-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Feugiat sed lectus vestibulum mattis.
+                Sed risus ultricies tristique nulla. Consectetur adipiscing elit duis tristique sollicitudin.
+            </p>
+        </section>
+
+        <section class="restaurants">
+            <h3 class="h3-discover">Restaurants</h3>
+            <img class="discover-img" src="images/discover/placeholder.jpg" data-src="images/discover/food.jpg" alt="A photo of food.">
+            <p class="discover-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Feugiat sed lectus vestibulum mattis.
+                Sed risus ultricies tristique nulla. Consectetur adipiscing elit duis tristique sollicitudin.
+            </p>
+        </section>
+
+        <section class="population">
+            <h3 class="h3-discover">Population</h3>
+            <img class="discover-img" src="images/discover/placeholder.jpg" data-src="images/discover/population.jpg" alt="A photo of houses.">
+            <p class="discover-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Feugiat sed lectus vestibulum mattis.
+                Sed risus ultricies tristique nulla. Consectetur adipiscing elit duis tristique sollicitudin.
+            </p>
+        </section>
+
+        <section class="school">
+            <h3 class="h3-discover">School</h3>
+            <img class="discover-img" src="images/discover/placeholder.jpg" data-src="images/discover/school.jpg" alt="A photo of student tables">
+            <p class="discover-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Feugiat sed lectus vestibulum mattis.
+                Sed risus ultricies tristique nulla. Consectetur adipiscing elit duis tristique sollicitudin.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <a id="logo-link" href="#">
+            <img class="logo-footer" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
+        </a>
+
+        <h3 class="site-name-footer">Daly City<br>Chamber of Commence</h3>
+
+        <p class="info">info.dc@fiction.net <br>
+            +1(000)-000-0000 <br>
+            <a href="#" class="location-map">Location map
+            </a>
+        </p>
+
+        <p class="copy">&copy; <span id="current-year"></span> Daly City Chamber of Commence | Terrystan N. Sustal | WDD 230 Project | Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/visit.js"></script>
+    <script src="scripts/lazyloading.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/current-year.js"></script>
+    <script src="scripts/last-modified.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+</body>
+</html>
