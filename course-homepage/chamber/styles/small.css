@@ -39,6 +39,10 @@
         /* margin-top: 500px; */
     }
 
+    #date {
+        padding: 10px;
+    }
+
     #date.close {
         display: none;
     }
@@ -51,6 +55,8 @@
     .close {
         display: none;
     }
+
+    
 
     /* END OF HEADER FOR HOME PAGE */
 
@@ -86,13 +92,16 @@
         width: 100%;
         height: 100%;
         position: relative;
+        object-fit: cover;
     }
 
     .welcome h2 {
         position: absolute;
+        margin-top: -650px;
+        margin-left: 300px;
         padding: 10px;
         font-family: 'Roboto', sans-serif;
-        font-size: 100px;
+        font-size: 20px;
         color: white;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
@@ -101,7 +110,7 @@
     .join-us {
         position: absolute;
         margin-top: -70px;
-        margin-left: 450px;
+        margin-left: 300px;
         padding: 10px;
         cursor: pointer;
         border: 1px solid black;
@@ -587,9 +596,11 @@ section img {
 
     .welcome h2 {
         position: absolute;
+        margin-top: -550px;
+        margin-left: 150px;
         padding: 10px;
         font-family: 'Roboto', sans-serif;
-        font-size: 100px;
+        font-size: 20px;
         color: white;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
@@ -598,7 +609,7 @@ section img {
     .join-us {
         position: absolute;
         margin-top: -70px;
-        margin-left: 450px;
+        margin-left: 150px;
         padding: 10px;
         cursor: pointer;
         border: 1px solid black;

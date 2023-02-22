@@ -35,23 +35,6 @@
         border: none !important;
     }
 
-    /* .logo {
-        grid-area: logo;
-        width: 100%;
-        height: auto;
-    }
-
-    .title {
-        z-index: 1;
-        grid-area: title;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2em;
-        display: flex;
-        justify-self: flex-start;
-        align-self: flex-end;
-        margin-top: 50px;
-    } */
-
     #logo {
         grid-area: logo;
         width: 100%;
@@ -132,15 +115,16 @@
         width: 100%;
         height: 100%;
         position: relative;
+        object-fit: cover;
     }
 
     .welcome h2 {
         position: absolute;
         margin-top: -600px;
-        margin-left: 150px;
+        margin-left: 50px;
         padding: 10px;
         font-family: 'Roboto', sans-serif;
-        font-size: 40px;
+        font-size: 30px;
         color: white;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
@@ -152,7 +136,7 @@
     .join-us {
         position: absolute;
         margin-top: -70px;
-        margin-left: 450px;
+        margin-left: 100px;
         padding: 10px;
         cursor: pointer;
         border: 1px solid black;
@@ -610,6 +594,10 @@
 
 @media only screen and (min-width: 1401px) {
 
+    #hero-img img {
+        object-fit: cover;
+    }
+
     #date {
         grid-area: date;
         display: inline;
@@ -803,6 +791,10 @@
 
 @media only screen and (min-width: 1351px) and (max-width: 1400px) {
 
+    #hero-img img {
+        object-fit: cover;
+    }
+
     #date {
         grid-area: date;
         display: inline;
@@ -995,6 +987,10 @@
 }
 
 @media only screen and (min-width: 1286px) and (max-width: 1350px) {
+
+    #hero-img img {
+        object-fit: cover;
+    }
 
     #date {
         grid-area: date;
@@ -1244,6 +1240,10 @@
 
 @media only screen and (min-width: 1113px) and (max-width: 1285px) {
 
+    #hero-img img {
+        object-fit: cover;
+    }
+
     #date {
         grid-area: date;
         display: inline;
@@ -1435,6 +1435,10 @@
 
 @media only screen and (min-width: 1042px) and (max-width: 1112px) {
 
+    #hero-img img {
+        object-fit: cover;
+    }
+
     #date {
         grid-area: date;
         display: inline;
@@ -1625,6 +1629,10 @@
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1043px) {
+
+    #hero-img img {
+        object-fit: cover;
+    }
 
     #date {
         grid-area: date;
