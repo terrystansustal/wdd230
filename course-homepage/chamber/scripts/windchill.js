@@ -8,6 +8,7 @@ const temp = document.getElementById("temperature");
 const windSpeed = document.getElementById("wind-speed");
 const tempValue = parseFloat(temp.innerHTML);
 const windSpeedValue = parseFloat(windSpeed.innerHTML);
+const windChill = "N/A";
 
 // check to make sure they meet the specification limits  (<=50°F and >3.0mph)
 if (tempValue <=50 && windSpeedValue > 3)
@@ -21,7 +22,6 @@ if (tempValue <=50 && windSpeedValue > 3)
 
 else
 {
-    const otherNumber = "N/A";
-    document.getElementById("wind-chill)").innerHTML = otherNumber;
+    document.querySelector("#wind-chill").innerHTML = `${windChill} &#176;F`;
 }
 
