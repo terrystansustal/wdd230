@@ -11,6 +11,12 @@
 table {
     grid-area: table;
     text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, tr, td {
+    border: 1px solid black;
 }
 
 /* thead {
