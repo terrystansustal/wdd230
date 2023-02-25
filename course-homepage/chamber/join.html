@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="The Daly City Chamber of Commence supports all local businesses. We support local
+    entrepreneurs by hosting local events such as networking. We believe that through the power of networking, people will help
+    and support one another's career or business.">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+</head>
+<body class="container-join">
+    <header>
+        <a href="#">
+            <!-- <img class="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence"> -->
+            <!-- <img id="logo" src="images/dalycity-logo.png" alt="Logo of Daly City Chamber of Commence"> -->
+            <img id="logo" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
+        </a>
+        
+        <nav>
+<button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- <div class="social"> -->
+        <div id="social">
+            <a href="#">
+                <img class="social-img" src="images/facebook.png" alt="Facebook logo">
+            </a>
+            <a href="#">
+                <img class="social-img" src="images/instagram.png" alt="Instagram logo">
+            </a>
+        </div>
+
+        <!-- <h1 class="title">Daly City<br>Chamber of Commence</h1> -->
+        <h1 id="title">Daly City<br>Chamber of Commence</h1>
+
+        <!-- <p class="date"><span id="todayDate"></span></p> -->
+        <p id="date"><span id="todayDate"></span> | <span id="todayVisit"></span></p>
+
+    </header>
+
+    <main>
+        <h1 class="join-header">Join The Chamber!</h1>
+
+        <form method="get" action="thankyou.html">
+            <fieldset class="contact-info">
+                <legend>Contact Information</legend>
+                <label class="top">First name*<input type="text" name="fname" required></label>
+                <label class="top">Last name*<input type="text" name="lname" required></label>
+                <label class="top">Business Position<input type="text" name="bposition" pattern="[a-zA-Z\s-]{7,}" title="Please enter a valid job position title (minimum 7 alpha characters, hyphens, and spaces only)"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone Number<input type="tel" name="phone"></label>
+                <label class="top">Business Name/Title*<input type="text" name="bname" required></label>
+            </fieldset>
+
+            <fieldset class="membership">
+                <legend>Membership Selection</legend>
+                    <div class="group">Please choose your membership
+                        <label class="sbs"><input type="radio" name="membership" value="NP Membership"> NP Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="Bronze Membership"> Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="Silver Membership"> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="Gold Membership"> Gold Membership</label>
+                    </div>
+                    <p class="member-info">📌 NP Membership is for non profit organizations and there is no fee. <br>
+                        📌 This memberships have increasing costs as well as increased benefits per level like trainings,
+                        advertising (like on the home page spotlights), event discounts, etc.</p>
+            </fieldset>
+
+            <fieldset class="describe-b">
+                <legend>Describe Your Business</legend>
+                <label class="bottom">Please briefly describe your business<textarea name="bdescribe"></textarea></label>
+                <input type="hidden" id="dateTime" name="dateTime" value=""></input>
+            </fieldset>
+
+            <input class="submitBtn" type="submit" value="Join the Chamber">
+    </main>
+
+    <footer>
+        <a id="logo-link" href="#">
+            <img class="logo-footer" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
+        </a>
+
+        <h3 class="site-name-footer">Daly City<br>Chamber of Commence</h3>
+
+        <p class="info">info.dc@fiction.net <br>
+            +1(000)-000-0000 <br>
+            <a href="#" class="location-map">Location map
+            </a>
+        </p>
+
+        <p class="copy">&copy; <span id="current-year"></span> Daly City Chamber of Commence | Terrystan N. Sustal | WDD 230 Project | Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/hiddenDate.js"></script>
+    <script src="scripts/visit.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/current-year.js"></script>
+    <script src="scripts/last-modified.js"></script>
+
+</body>
+</html>

@@ -552,6 +552,97 @@
     }
                             
                                     /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+                                    /* --------------- CSS FOR JOIN PAGE --------------- */
+    .container-join {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16% 2fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+    form fieldset {
+        margin: 2em 0;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    form legend {
+        font-size: 30px;
+        color: white;
+        padding: 0 .5rem;
+    }
+
+    form label.top {
+        display: block;
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: white;
+    }
+
+    form label.top input {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: .75rem;
+        width: 100%;
+        max-width: 25rem;
+        height: 44px;
+        background-color: lightgrey;
+    }
+
+    .group {
+        font-size: 20px;
+    }
+
+    form label.sbs {
+        font-size: 16px;
+        display: block;
+        padding: .75rem 0;
+        color: white;
+    }
+
+    form label.bottom textarea {
+        display: block;
+        font-size: 1rem;
+    }
+
+    form input.submitBtn {
+        border: none;
+        background-color: white;
+        color: black;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        widows: 96%;
+        max-width: 20rem;
+    }
+
+    form label.top input:required {
+        border-left: 6px solid red;
+    }
+
+    form label.top input:requred:valid {
+        border-left: 6px solid green;
+    }
+
+    .container-thank-you {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 25% 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
 }
 
 
@@ -1110,6 +1201,97 @@
     }
                                                                                                 
                                         /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+                                        /* --------------- CSS FOR JOIN PAGE --------------- */
+    .container-join {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 14% 2fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+    form fieldset {
+        margin: 2em 0;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    form legend {
+        font-size: 30px;
+        color: white;
+        padding: 0 .5rem;
+    }
+
+    form label.top {
+        display: block;
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: white;
+    }
+
+    form label.top input {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: .75rem;
+        width: 100%;
+        max-width: 25rem;
+        height: 44px;
+        background-color: lightgrey;
+    }
+
+    .group {
+        font-size: 20px;
+    }
+
+    form label.sbs {
+        font-size: 16px;
+        display: block;
+        padding: .75rem 0;
+        color: white;
+    }
+
+    form label.bottom textarea {
+        display: block;
+        font-size: 1rem;
+    }
+
+    form input.submitBtn {
+        border: none;
+        background-color: white;
+        color: black;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        widows: 96%;
+        max-width: 20rem;
+    }
+
+    form label.top input:required {
+        border-left: 6px solid red;
+    }
+
+    form label.top input:requred:valid {
+        border-left: 6px solid green;
+    }
+
+    .container-thank-you {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 25% 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 830px) {
@@ -1670,5 +1852,96 @@
     }
                                                             
                                     /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+                                    /* --------------- CSS FOR JOIN PAGE --------------- */
+    .container-join {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 14% 2fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+    form fieldset {
+        margin: 2em 0;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    form legend {
+        font-size: 30px;
+        color: white;
+        padding: 0 .5rem;
+    }
+
+    form label.top {
+        display: block;
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: white;
+    }
+
+    form label.top input {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: .75rem;
+        width: 100%;
+        max-width: 25rem;
+        height: 44px;
+        background-color: lightgrey;
+    }
+
+    .group {
+        font-size: 20px;
+    }
+
+    form label.sbs {
+        font-size: 16px;
+        display: block;
+        padding: .75rem 0;
+        color: white;
+    }
+
+    form label.bottom textarea {
+        display: block;
+        font-size: 1rem;
+    }
+
+    form input.submitBtn {
+        border: none;
+        background-color: white;
+        color: black;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        widows: 96%;
+        max-width: 20rem;
+    }
+
+    form label.top input:required {
+        border-left: 6px solid red;
+    }
+
+    form label.top input:requred:valid {
+        border-left: 6px solid green;
+    }
+
+    .container-thank-you {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 25% 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
 }
 
