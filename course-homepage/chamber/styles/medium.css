@@ -621,7 +621,7 @@
         border-radius: 1rem;
         padding: .75rem 1.5rem;
         margin: 0 0 2rem 2%;
-        widows: 96%;
+        width: 96%;
         max-width: 20rem;
     }
 
@@ -629,7 +629,7 @@
         border-left: 6px solid red;
     }
 
-    form label.top input:requred:valid {
+    form label.top input:required:valid {
         border-left: 6px solid green;
     }
 
@@ -1270,7 +1270,7 @@
         border-radius: 1rem;
         padding: .75rem 1.5rem;
         margin: 0 0 2rem 2%;
-        widows: 96%;
+        width: 96%;
         max-width: 20rem;
     }
 
@@ -1278,7 +1278,7 @@
         border-left: 6px solid red;
     }
 
-    form label.top input:requred:valid {
+    form label.top input:required:valid {
         border-left: 6px solid green;
     }
 
@@ -1921,7 +1921,7 @@
         border-radius: 1rem;
         padding: .75rem 1.5rem;
         margin: 0 0 2rem 2%;
-        widows: 96%;
+        width: 96%;
         max-width: 20rem;
     }
 
@@ -1929,7 +1929,7 @@
         border-left: 6px solid red;
     }
 
-    form label.top input:requred:valid {
+    form label.top input:required:valid {
         border-left: 6px solid green;
     }
 
