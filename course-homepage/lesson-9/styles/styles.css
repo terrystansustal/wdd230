@@ -27,3 +27,13 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: antiquewhite;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+}
