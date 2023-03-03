@@ -633,6 +633,8 @@
         border-left: 6px solid green;
     }
 
+                                        /* --------------- CSS FOR THANK YOU PAGE --------------- */
+
     .container-thank-you {
         display: grid;
         grid-template-columns: 1fr;
@@ -643,6 +645,128 @@
         "footer";
         gap: 50px;
     }
+
+                                        /* --------------- END OF THANK YOU PAGE --------------- */
+
+                                        /* --------------- CSS FOR DIRECTORY PAGE --------------- */
+
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 2fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .business-header {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        padding: 5px;
+        background-color: #453A49;
+        text-align: center;
+        gap:  10px;
+        margin-bottom: 60px;
+    }
+
+    .menu button {
+        width: 150px;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+
+    .cards {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, mixmax(320px, 1fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 10px;
+        line-height: 30px;
+    }
+
+    .cards h3 {
+        font-size: 24px;
+    }
+
+    .cards img {
+        width: 80%;
+        object-fit: cover;
+        box-shadow: 10px 10px 5px #453A49;
+    }
+
+    .cards section {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    .cards a {
+        color: white;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .list section > * {
+        margin: 0 1rem;
+    }
+
+    .list section img {
+        display: none;
+    }
+
+    .list section h3{
+        font-size: 15px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .list section p {
+        font-size: 14px;
+    }
+
+    .list section a {
+        font-size: 14px;
+    }
+
+    .list section:nth-child(even) {
+        background-color: #453A49;
+    }
+
+    section a {
+        font-family: 'Merriweather', serif;
+        font: 0.9rem;
+    }
+
+                                        /* --------------- END OF DIRECTORY PAGE --------------- */
 }
 
 
@@ -1282,6 +1406,8 @@
         border-left: 6px solid green;
     }
 
+                                        /* --------------- CSS FOR THANK YOU PAGE --------------- */
+
     .container-thank-you {
         display: grid;
         grid-template-columns: 1fr;
@@ -1292,6 +1418,128 @@
         "footer";
         gap: 50px;
     }
+
+                                        /* --------------- END OF THANK YOU PAGE --------------- */
+
+                                        /* --------------- CSS FOR DIRECTORY PAGE --------------- */
+
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 2fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .business-header {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        padding: 5px;
+        background-color: #453A49;
+        text-align: center;
+        gap:  10px;
+        margin-bottom: 60px;
+    }
+
+    .menu button {
+        width: 150px;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+
+    .cards {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, mixmax(320px, 1fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 10px;
+        line-height: 30px;
+    }
+
+    .cards h3 {
+        font-size: 24px;
+    }
+
+    .cards img {
+        width: 80%;
+        object-fit: cover;
+        box-shadow: 10px 10px 5px #453A49;
+    }
+
+    .cards section {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    .cards a {
+        color: white;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .list section > * {
+        margin: 0 1rem;
+    }
+
+    .list section img {
+        display: none;
+    }
+
+    .list section h3{
+        font-size: 14px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .list section p {
+        font-size: 12px;
+    }
+
+    .list section a {
+        font-size: 12px;
+    }
+
+    .list section:nth-child(even) {
+        background-color: #453A49;
+    }
+
+    section a {
+        font-family: 'Merriweather', serif;
+        font: 0.9rem;
+    }
+
+                                        /* --------------- END OF DIRECTORY PAGE --------------- */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 830px) {
@@ -1933,6 +2181,8 @@
         border-left: 6px solid green;
     }
 
+                                        /* --------------- CSS FOR THANK YOU PAGE --------------- */
+
     .container-thank-you {
         display: grid;
         grid-template-columns: 1fr;
@@ -1943,5 +2193,127 @@
         "footer";
         gap: 50px;
     }
+
+                                        /* --------------- END OF THANK YOU PAGE --------------- */
+
+                                        /* --------------- CSS FOR DIRECTORY PAGE --------------- */
+
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 2fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .business-header {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        padding: 5px;
+        background-color: #453A49;
+        text-align: center;
+        gap:  10px;
+        margin-bottom: 60px;
+    }
+
+    .menu button {
+        width: 150px;
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+
+    .cards {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, mixmax(320px, 1fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 10px;
+        line-height: 30px;
+    }
+
+    .cards h3 {
+        font-size: 24px;
+    }
+
+    .cards img {
+        width: 80%;
+        object-fit: cover;
+        box-shadow: 10px 10px 5px #453A49;
+    }
+
+    .cards section {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid white;
+    }
+
+    .cards a {
+        color: white;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .list section > * {
+        margin: 0 1rem;
+    }
+
+    .list section img {
+        display: none;
+    }
+
+    .list section h3{
+        font-size: 14px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .list section p {
+        font-size: 12px;
+    }
+
+    .list section a {
+        font-size: 12px;
+    }
+
+    .list section:nth-child(even) {
+        background-color: #453A49;
+    }
+
+    section a {
+        font-family: 'Merriweather', serif;
+        font: 0.9rem;
+    }
+
+                                        /* --------------- END OF DIRECTORY PAGE --------------- */
 }
 

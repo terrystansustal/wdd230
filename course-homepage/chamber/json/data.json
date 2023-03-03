@@ -1,0 +1,76 @@
+{
+    "businesses": [
+        {
+            "image": "images/directory/barbershop.png",
+            "company": "The Barbershop",
+            "address": "11 Fakey St. Daly City, CA. 10102",
+            "phoneNumber": "(000)-122-1000",
+            "website": "www.thefakebarbershop.com",
+            "membership": "Bronze Membership"
+        },
+        {
+            "image": "images/directory/bbq-grill.png",
+            "company": "Barbeque Grills",
+            "address": "61 Fakey St. Daly City, CA. 10102",
+            "phoneNumber": "(000)-022-1010",
+            "website": "www.thefakebarbecuegrills.com",
+            "membership": "Silver Membership"
+        },
+        {
+            "image": "images/directory/borcelle.png",
+            "company": "Borcelle Clothing",
+            "address": "23 Fake David Ave. Daly City, CA. 10102",
+            "phoneNumber": "(000)-154-0000",
+            "website": "www.thefakeborcelleclothing.com",
+            "membership": "NP Membership"
+        },
+        {
+            "image": "images/directory/castrostat.png",
+            "company": "Castrostat",
+            "address": "4A Fake Vincent Blvd. Daly City, CA. 10102",
+            "phoneNumber": "(000)-090-0000",
+            "website": "www.thefakecastrostat.net",
+            "membership": "NP Membership"
+        },
+        {
+            "image": "images/directory/faught.png",
+            "company": "Faught Plumbing",
+            "address": "91 Fake Unity St. Daly City, CA. 10102",
+            "phoneNumber": "(000)-122-3610",
+            "website": "www.thefakefaughtplumbing.org",
+            "membership": "Bronze Membership"
+        },
+        {
+            "image": "images/directory/fog-city.png",
+            "company": "Fog City Web Design",
+            "address": "67 Fake Mark St. Daly City, CA. 10102",
+            "phoneNumber": "(000)-542-9430",
+            "website": "www.thefakefogcity.com",
+            "membership": "Gold Membership"
+        },
+        {
+            "image": "images/directory/photography.png",
+            "company": "Morgan Maxwell Photography",
+            "address": "51 Fake Miriam Ave. Daly City, CA. 10102",
+            "phoneNumber": "(000)-142-7810",
+            "website": "www.thefakemorganmaxwell.org",
+            "membership": "Silver Membership"
+        },
+        {
+            "image": "images/directory/salford.png",
+            "company": "Salford",
+            "address": "33 Fake Street Daly City, CA. 10102",
+            "phoneNumber": "(000)-222-1122",
+            "website": "www.salfordfakebus.com",
+            "membership": "Gold Membership"
+        },
+        {
+            "image": "images/directory/yay-area.png",
+            "company": "Yay Area Car Repair Shop",
+            "address": "48 Fake Apple Blvd. Daly City, CA. 10102",
+            "phoneNumber": "(000)-542-0970",
+            "website": "www.thefakeyayarea.com",
+            "membership": "Gold Membership"
+        }
+    ]
+}
