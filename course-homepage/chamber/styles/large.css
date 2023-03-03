@@ -330,9 +330,8 @@
 
     .join-p {
         grid-area: join-p;
-        margin-top: 40px;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* END OF JOIN SECTIONS */
@@ -721,11 +720,11 @@
         gap: 50px;
     }
 
-    * {
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .business-header {
         text-align: center;
@@ -794,6 +793,7 @@
         margin: 0;
         text-align: center;
         padding: 10px;
+        border: none;
     }
 
     .list section > * {
@@ -1507,6 +1507,11 @@
         margin-top: -70px;
         margin-left: 220px;
         font-size: 24px;
+    }
+
+    .join-p {
+        margin-top: -10px;
+        font-size: 15px;
     }
 
     .nature {

@@ -661,11 +661,11 @@
         gap: 50px;
     }
 
-    * {
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .business-header {
         text-align: center;
@@ -734,6 +734,7 @@
         margin: 0;
         text-align: center;
         padding: 10px;
+        border: none;
     }
 
     .list section > * {
@@ -1434,11 +1435,11 @@
         gap: 50px;
     }
 
-    * {
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .business-header {
         text-align: center;
@@ -1507,6 +1508,7 @@
         margin: 0;
         text-align: center;
         padding: 10px;
+        border: none;
     }
 
     .list section > * {
@@ -2209,11 +2211,11 @@
         gap: 50px;
     }
 
-    * {
+    /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .business-header {
         text-align: center;
@@ -2282,6 +2284,7 @@
         margin: 0;
         text-align: center;
         padding: 10px;
+        border: none;
     }
 
     .list section > * {
