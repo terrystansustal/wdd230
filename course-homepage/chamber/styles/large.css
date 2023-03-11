@@ -376,7 +376,7 @@
         grid-template-areas:
         ". title title ."
         ". img img degree"
-        ". . nature nature"
+        "nature nature nature nature"
         "line line line line"
         ". wind wind .";
         background-color: #6D3B47;
@@ -385,18 +385,18 @@
     .weather-title {
         grid-area: title;
         text-align: right;
-        margin-left: 50px;
+        margin-left: 25px;
         margin-top: -5px;
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 26px;
     }
 
-    .weather-img {
+    #weather-img {
         grid-area: img;
-        margin-top: 10px;
+        margin-top: -5px;
         margin-left: -10px;
-        width: 70%;
+        width: 100%;
     }
 
     .degree {
@@ -409,11 +409,14 @@
 
     .nature {
         grid-area: nature;
-        margin-top: 45px;
-        margin-left: 30px;
-        font-size: 18px;
+        margin-top: 40px;
+        margin-left: 10px;
         color: white;
         font-family: 'Merriweather', serif;
+    }
+
+    .nature p {
+        font-size: 22px;
     }
 
     .line {
@@ -422,7 +425,7 @@
         margin-top: 30px;
     }
 
-    .wind {
+    #wind {
         grid-area: wind;
         font-size: 16px;
         color: white;
@@ -1514,8 +1517,48 @@
         font-size: 15px;
     }
 
+    .weather-title {
+        margin-left: 25px;
+    }
+
+    #weather-img {
+        grid-area: img;
+        margin-top: -5px;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
     .nature {
+        grid-area: nature;
+        margin-top: 40px;
+        /* margin-left: 30px; */
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature p {
+        font-size: 16px;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: 30px;
+    }
+
+    #wind {
+        grid-area: wind;
         font-size: 12px;
+        color: white;
+        /* margin-top: 25px; */
     }
 
     /* nav a {
@@ -1714,8 +1757,50 @@
         font-size: 1.2em;
     }
 
+    .weather-title {
+        grid-area: title;
+        text-align: right;
+        margin-left: 25px;
+    }
+
+    #weather-img {
+        grid-area: img;
+        margin-top: 5px;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
     .nature {
-        font-size: 12px;
+        grid-area: nature;
+        margin-top: 40px;
+        /* margin-left: 30px; */
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature p {
+        font-size: 15px;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: 30px;
+    }
+
+    #wind {
+        grid-area: wind;
+        font-size: 13px;
+        color: white;
+        margin-top: 25px;
     }
     /* END OF HEADER FOR ALL PAGE */
 
@@ -1907,6 +1992,50 @@
 
     nav a {
         font-size: 1.1em;
+    }
+
+    .weather-title {
+        margin-left: 25px;
+    }
+
+    #weather-img {
+        grid-area: img;
+        margin-top: -5px;
+        margin-left: -10px;
+        width: 100%;
+    }
+
+    .degree {
+        grid-area: degree;
+        /* margin-left: -10px; */
+        font-size: 30px;
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature {
+        grid-area: nature;
+        margin-top: 40px;
+        /* margin-left: 20px; */
+        color: white;
+        font-family: 'Merriweather', serif;
+    }
+
+    .nature p {
+        font-size: 16px;
+    }
+
+    .line {
+        grid-area: line;
+        border-top: 1px solid white;
+        margin-top: 30px;
+    }
+
+    #wind {
+        grid-area: wind;
+        font-size: 13px;
+        color: white;
+        /* margin-top: 25px; */
     }
 
     /* END OF HEADER FOR ALL PAGE */

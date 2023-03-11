@@ -228,7 +228,7 @@
     }
 
     .spotlight-2 {
-        height: 400px;
+        height: 420px;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
@@ -335,7 +335,7 @@
         grid-template-areas:
         ". title title ."
         ". img img degree"
-        ". . nature nature"
+        "nature nature nature nature"
         "line line line line"
         ". wind wind .";
         background-color: #6D3B47;
@@ -351,7 +351,7 @@
         font-size: 26px;
     }
 
-    .weather-img {
+    #weather-img {
         grid-area: img;
         margin-top: -50px;
         margin-left: -10px;
@@ -368,8 +368,8 @@
 
     .nature {
         grid-area: nature;
-        margin-top: 60px;
-        margin-left: 30px;
+        margin-top: 30px;
+        /* margin-left: 30px; */
         font-size: 20px;
         color: white;
         font-family: 'Merriweather', serif;
@@ -378,12 +378,12 @@
     .line {
         grid-area: line;
         border-top: 1px solid white;
-        margin-top: -80px;
+        margin-top: 20px;
     }
 
-    .wind {
+    #wind {
         grid-area: wind;
-        font-size: 16px;
+        font-size: 20px;
         color: white;
         margin-top: 40px;
     }
@@ -1108,7 +1108,7 @@
         grid-template-areas:
         ". title title ."
         ". img img degree"
-        ". . nature nature"
+        "nature nature nature nature"
         "line line line line"
         ". wind wind .";
         background-color: #6D3B47;
@@ -1124,7 +1124,7 @@
         font-size: 26px;
     }
 
-    .weather-img {
+    #weather-img {
         grid-area: img;
         margin-top: -50px;
         margin-left: -10px;
@@ -1141,8 +1141,8 @@
 
     .nature {
         grid-area: nature;
-        margin-top: 60px;
-        margin-left: 30px;
+        margin-top: 30px;
+        /* margin-left: 30px; */
         font-size: 20px;
         color: white;
         font-family: 'Merriweather', serif;
@@ -1151,12 +1151,12 @@
     .line {
         grid-area: line;
         border-top: 1px solid white;
-        margin-top: -80px;
+        margin-top: 20px;
     }
 
-    .wind {
+    #wind {
         grid-area: wind;
-        font-size: 16px;
+        font-size: 20px;
         color: white;
         margin-top: 40px;
     }
@@ -1883,7 +1883,7 @@
         grid-template-areas:
         ". title title ."
         ". img img degree"
-        ". . nature nature"
+        "nature nature nature nature"
         "line line line line"
         ". wind wind .";
         background-color: #6D3B47;
@@ -1899,7 +1899,7 @@
         font-size: 26px;
     }
 
-    .weather-img {
+    #weather-img {
         grid-area: img;
         margin-top: -50px;
         margin-left: -10px;
@@ -1916,8 +1916,8 @@
 
     .nature {
         grid-area: nature;
-        margin-top: 60px;
-        margin-left: 30px;
+        margin-top: 30px;
+        /* margin-left: 30px; */
         font-size: 20px;
         color: white;
         font-family: 'Merriweather', serif;
@@ -1926,12 +1926,12 @@
     .line {
         grid-area: line;
         border-top: 1px solid white;
-        margin-top: -80px;
+        margin-top: 20px;
     }
 
-    .wind {
+    #wind {
         grid-area: wind;
-        font-size: 16px;
+        font-size: 20px;
         color: white;
         margin-top: 40px;
     }
