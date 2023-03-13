@@ -307,6 +307,10 @@ footer {
     color: white;
 }
 
+.weather-data {
+    color: white;
+}
+
 .info {
     grid-area: info;
     display: flex;
