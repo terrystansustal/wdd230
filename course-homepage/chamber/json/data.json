@@ -6,6 +6,7 @@
             "address": "11 Fakey St. Daly City, CA. 10102",
             "phoneNumber": "(000)-122-1000",
             "website": "www.thefakebarbershop.com",
+            "description": "We are open M-F until 5pm! First 3 customers gets a free haircut!",
             "membership": "Bronze Membership"
         },
         {
@@ -14,6 +15,7 @@
             "address": "61 Fakey St. Daly City, CA. 10102",
             "phoneNumber": "(000)-022-1010",
             "website": "www.thefakebarbecuegrills.com",
+            "description": "Come and enjoy our Grilled BBQ Chicken!",
             "membership": "Silver Membership"
         },
         {
@@ -22,6 +24,7 @@
             "address": "23 Fake David Ave. Daly City, CA. 10102",
             "phoneNumber": "(000)-154-0000",
             "website": "www.thefakeborcelleclothing.com",
+            "description": "Stop by to check out our new releases!",
             "membership": "NP Membership"
         },
         {
@@ -30,6 +33,7 @@
             "address": "4A Fake Vincent Blvd. Daly City, CA. 10102",
             "phoneNumber": "(000)-090-0000",
             "website": "www.thefakecastrostat.net",
+            "description": "Need to print a newspaper, articles, books, or clothing designs? We've got you covered!",
             "membership": "NP Membership"
         },
         {
@@ -38,6 +42,7 @@
             "address": "91 Fake Unity St. Daly City, CA. 10102",
             "phoneNumber": "(000)-122-3610",
             "website": "www.thefakefaughtplumbing.org",
+            "description": "Give us a call if you need a handy dandy man to fix your sink!",
             "membership": "Bronze Membership"
         },
         {
@@ -46,6 +51,7 @@
             "address": "67 Fake Mark St. Daly City, CA. 10102",
             "phoneNumber": "(000)-542-9430",
             "website": "www.thefakefogcity.com",
+            "description": "Are you interested in learning about Web Development? Give us a call to learn more!",
             "membership": "Gold Membership"
         },
         {
@@ -54,6 +60,7 @@
             "address": "51 Fake Miriam Ave. Daly City, CA. 10102",
             "phoneNumber": "(000)-142-7810",
             "website": "www.thefakemorganmaxwell.org",
+            "description": "Looking for a professional photographer for your special day? Give us a call and we got you covered!",
             "membership": "Silver Membership"
         },
         {
@@ -62,6 +69,7 @@
             "address": "33 Fake Street Daly City, CA. 10102",
             "phoneNumber": "(000)-222-1122",
             "website": "www.salfordfakebus.com",
+            "description": "Passengers' safety is our first priority!",
             "membership": "Gold Membership"
         },
         {
@@ -70,6 +78,7 @@
             "address": "48 Fake Apple Blvd. Daly City, CA. 10102",
             "phoneNumber": "(000)-542-0970",
             "website": "www.thefakeyayarea.com",
+            "description": "We fix tires, change oils, and many more! Stop by and we'll take care of your vehicle.",
             "membership": "Gold Membership"
         }
     ]

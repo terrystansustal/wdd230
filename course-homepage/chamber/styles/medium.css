@@ -93,7 +93,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-rows: 10% 2% 1fr 0.2fr 12% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
         "meet meet"
@@ -183,93 +183,40 @@
 
     #spotlight {
         grid-area: spotlight;
-    }
-
-    .spotlight-1 {
-        height: 400px;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "tour-title"
-        "tour-img"
-        "tour-p"
-        "line"
-        "tour-contact";
-    }
-
-    .tour-title {
-        grid-area: tour-title;
-        font-size: 24px;
+        color: white;
         text-align: center;
-        margin-top: -25px;
-    }
-
-    .tour-img {
-        width: 20%;
-        grid-area: tour-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .tour-p {
-        grid-area: tour-p;
-    }
-
-    .line-tour {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .tour-contact {
-        grid-area: tour-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-2 {
-        height: 420px;
+        padding-top: 30px;
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "school-title"
-        "school-img"
-        "school-p"
-        "line"
-        "school-contact";
+        "business-0 business-1";
     }
 
-    .school-title {
-        grid-area: school-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
+    #spotlight a{
+        font-size: 16px;
+        color: white;
     }
 
-    .school-img {
-        width: 20%;
-        grid-area: school-img;
-        margin-left: auto;
-        margin-right: auto;
+    #spotlight h3 {
+        font-size: 25px;
     }
 
-    .school-p {
-        grid-area: school-p;
+    .business-0 {
+        grid-area: business-0;
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .line-school {
-        grid-area: line;
-        border-top: 1px solid white;
+      
+    .business-1 {
+        grid-area: business-1;
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .school-contact {
-        grid-area: school-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-3 {
+    
+    .business-2 {
         display: none;
+        padding: 5px;
+        background-color: #453A49;
     }
 
     #join {
@@ -653,7 +600,7 @@
     .container-directory {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 2fr 0.2fr;
+        grid-template-rows: 8% 2fr 6%;
         grid-template-areas:
         "header"
         "main"
@@ -866,7 +813,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-rows: 10% 2% 1fr 0.2fr 13% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
         "meet meet"
@@ -956,93 +903,40 @@
 
     #spotlight {
         grid-area: spotlight;
-    }
-
-    .spotlight-1 {
-        height: 400px;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "tour-title"
-        "tour-img"
-        "tour-p"
-        "line"
-        "tour-contact";
-    }
-
-    .tour-title {
-        grid-area: tour-title;
-        font-size: 24px;
+        color: white;
         text-align: center;
-        margin-top: -25px;
-    }
-
-    .tour-img {
-        width: 20%;
-        grid-area: tour-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .tour-p {
-        grid-area: tour-p;
-    }
-
-    .line-tour {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .tour-contact {
-        grid-area: tour-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-2 {
-        height: 400px;
+        padding-top: 30px;
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "school-title"
-        "school-img"
-        "school-p"
-        "line"
-        "school-contact";
+        "business-0 business-1";
     }
 
-    .school-title {
-        grid-area: school-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
+    #spotlight a{
+        font-size: 16px;
+        color: white;
     }
 
-    .school-img {
-        width: 20%;
-        grid-area: school-img;
-        margin-left: auto;
-        margin-right: auto;
+    #spotlight h3 {
+        font-size: 25px;
     }
 
-    .school-p {
-        grid-area: school-p;
+    .business-0 {
+        grid-area: business-0;
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .line-school {
-        grid-area: line;
-        border-top: 1px solid white;
+      
+    .business-1 {
+        grid-area: business-1;
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .school-contact {
-        grid-area: school-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-3 {
+    
+    .business-2 {
         display: none;
+        padding: 5px;
+        background-color: #453A49;
     }
 
     #join {
@@ -1641,7 +1535,7 @@
 
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 2% 1fr 0.2fr 28% 0.2fr 13% 8%;
+        grid-template-rows: 10% 2% 1fr 0.2fr 13% 0.2fr 13% 8%;
         grid-template-areas:
         "header header"
         "meet meet"
@@ -1731,93 +1625,40 @@
 
     #spotlight {
         grid-area: spotlight;
-    }
-
-    .spotlight-1 {
-        height: 400px;
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "tour-title"
-        "tour-img"
-        "tour-p"
-        "line"
-        "tour-contact";
-    }
-
-    .tour-title {
-        grid-area: tour-title;
-        font-size: 24px;
+        color: white;
         text-align: center;
-        margin-top: -25px;
-    }
-
-    .tour-img {
-        width: 20%;
-        grid-area: tour-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .tour-p {
-        grid-area: tour-p;
-    }
-
-    .line-tour {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .tour-contact {
-        grid-area: tour-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-2 {
-        height: 400px;
+        padding-top: 30px;
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        "school-title"
-        "school-img"
-        "school-p"
-        "line"
-        "school-contact";
+        "business-0 business-1";
     }
 
-    .school-title {
-        grid-area: school-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
+    #spotlight a{
+        font-size: 16px;
+        color: white;
     }
 
-    .school-img {
-        width: 20%;
-        grid-area: school-img;
-        margin-left: auto;
-        margin-right: auto;
+    #spotlight h3 {
+        font-size: 25px;
     }
 
-    .school-p {
-        grid-area: school-p;
+    .business-0 {
+        grid-area: business-0;
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .line-school {
-        grid-area: line;
-        border-top: 1px solid white;
+      
+    .business-1 {
+        grid-area: business-1;
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .school-contact {
-        grid-area: school-contact;
-        /* margin-top: 50px; */
-    }
-
-    .spotlight-3 {
+    
+    .business-2 {
         display: none;
+        padding: 5px;
+        background-color: #453A49;
     }
 
     #join {
@@ -2203,7 +2044,7 @@
     .container-directory {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 2fr 0.2fr;
+        grid-template-rows: 7% 2fr 6%;
         grid-template-areas:
         "header"
         "main"

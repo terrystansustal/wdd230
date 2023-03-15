@@ -76,7 +76,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
-        grid-template-rows: 16% 3% 20% 20% 16% 1fr;
+        grid-template-rows: 16% 3% 20% 23% 16% 1fr;
         grid-template-areas:
         "header header header header header"
         ". meet meet meet ."
@@ -175,137 +175,34 @@
 
     #spotlight {
         grid-area: spotlight;
-    }
-
-    /* SPOTLIGHT 1 */
-
-    .spotlight-1 {
-        grid-area: spotlight-1;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "tour-title"
-        "tour-img"
-        "tour-p"
-        "line"
-        "tour-contact";
-    }
-
-    .tour-title {
-        grid-area: tour-title;
-        font-size: 24px;
+        color: white;
         text-align: center;
-        margin-top: -25px;
     }
 
-    .tour-img {
-        width: 20%;
-        grid-area: tour-img;
-        margin-left: auto;
-        margin-right: auto;
+    #spotlight a{
+        font-size: 16px;
+        color: white;
     }
 
-    .tour-p {
-        grid-area: tour-p;
+    #spotlight h3 {
+        font-size: 25px;
     }
 
-    .line-tour {
-        grid-area: line;
-        border-top: 1px solid white;
+    .business-0 {
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .tour-contact {
-        grid-area: tour-contact;
-        /* margin-top: 50px; */
+      
+    .business-1 {
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    /* SPOTLIGHT 2 */
-
-    .spotlight-2 {
-        grid-area: spotlight-2;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "school-title"
-        "school-img"
-        "school-p"
-        "line"
-        "school-contact";
+    
+    .business-2 {
+        padding: 5px;
+        background-color: #453A49;
     }
-
-    .school-title {
-        grid-area: school-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
-    }
-
-    .school-img {
-        width: 20%;
-        grid-area: school-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .school-p {
-        grid-area: school-p;
-    }
-
-    .line-school {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .school-contact {
-        grid-area: school-contact;
-        /* margin-top: 50px; */
-    }
-
-    /* SPOTLIGHT 3 */
-
-    .spotlight-3 {
-        grid-area: spotlight-3;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0.2fr 0.3fr 0.5fr 1% 0.3fr;
-        grid-template-areas: 
-        "blood-drive-title"
-        "blood-drive-img"
-        "blood-drive-p"
-        "line"
-        "blood-drive-contact";
-    }
-
-    .blood-drive-title {
-        grid-area: blood-drive-title;
-        font-size: 24px;
-        text-align: center;
-        margin-top: -25px;
-    }
-
-    .blood-drive-img {
-        width: 15%;
-        grid-area: blood-drive-img;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .blood-drive-p {
-        grid-area: blood-drive-p;
-    }
-
-    .line-blood-drive {
-        grid-area: line;
-        border-top: 1px solid white;
-    }
-
-    .blood-drive-contact {
-        grid-area: blood-drive-contact;
-        /* margin-top: 50px; */
-    }
-
+      
     /* END OF SPOTLIGHT SECTION */
 
     /* JOIN SECTIONS */
@@ -715,7 +612,7 @@
     .container-directory {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 1fr 0.2fr;
+        grid-template-rows: 10% 1fr 10%;
         grid-template-areas:
         "header"
         "main"
@@ -820,9 +717,6 @@
         font-family: 'Merriweather', serif;
         font: 0.9rem;
     }
-
-
-    
 
                                         /* --------------- END OF DIRECTORY PAGE --------------- */
 
@@ -1713,6 +1607,17 @@
         transform: scale(1.1);
     }                                                                                                                               
                                         /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
 }
 
 @media only screen and (min-width: 1042px) and (max-width: 1112px) {
