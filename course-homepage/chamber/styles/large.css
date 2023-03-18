@@ -76,7 +76,7 @@
         margin: 0 auto; */
         display: grid;
         grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
-        grid-template-rows: 16% 3% 20% 23% 16% 1fr;
+        grid-template-rows: 18% 3% 20% 23% 16% 1fr;
         grid-template-areas:
         "header header header header header"
         ". meet meet meet ."
