@@ -1188,7 +1188,7 @@
     .container-directory {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 16% 1fr 15%;
+        grid-template-rows: 16% 1fr 18%;
         grid-template-areas:
         "header"
         "main"
@@ -1898,6 +1898,17 @@
     }
                                                                                                                                     
                                         /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
 }
 
 @media only screen and (min-width: 1113px) and (max-width: 1285px) {
