@@ -720,6 +720,161 @@
 
                                         /* --------------- END OF DIRECTORY PAGE --------------- */
 
+    /* --------------- CONTACT US PAGE --------------- */
+
+    .container-contactus {
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 2fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 40px;
+    }
+
+    .main-contactus {
+        display: grid;
+        grid-template-columns: 1fr 10% 1fr;
+        grid-template-rows: 7% 1fr 25% 0.5fr;
+        grid-template-areas:
+        "header header header"
+        "point-direct line inquiries"
+        "point-direct line building"
+        "additional-contact additional-contact additional-contact";
+    }
+
+    .vertical-line {
+        grid-area: line;
+        height: 75em;
+        margin-left: 50px;
+        border-left: 2px solid white;
+    }
+
+    .header-contactus {
+        font-size: 60px;
+        text-align: center;
+        grid-area: header;
+    }
+
+    .village-img {
+        grid-area: village;
+    }
+
+    .village-img h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-align: center;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .village-img img {
+        width: 100%;
+        height: 70%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .point-direct {
+        grid-area: point-direct;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "president"
+        "secretary"
+        "chairman";
+        padding: 20px;
+    }
+
+    .point-direct img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .point-direct img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    .point-direct figcaption {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 23px;
+    }
+
+    .point-direct p {
+        text-align: left;
+        font-size: 20px;
+        padding: 5px;
+        /* width: 100px; */
+    }
+
+    .president {
+        grid-area: president;
+    }
+
+    .secretary {
+        grid-area: secretary;
+    }
+
+    .chairman {
+        grid-area: chairman;
+    }
+
+    .inquiries {
+        grid-area: inquiries;
+        margin-top: 20px;
+    }
+
+    .inquiries h4 {
+        font-size: 26px;
+    }
+
+    .inquiries p {
+        font-size: 20px;
+    }
+
+    .building img {
+        grid-area: building;
+        /* margin-top: -60px; */
+        width: 100%;
+    }
+
+    .building figcaption {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 20px;
+    }
+
+    .additional-contact {
+        grid-area: additional-contact;
+        margin-top: 20px;
+        border-top: 2px solid white;
+    }
+
+    .additional-contact .group {
+        margin-top: 20px;
+    }
+
+    .additional-contact p {
+        font-size: 20px;
+    }
+
+    .headshot {
+        width: 80%;
+        border-radius: 80%;
+    }
+                                        /* --------------- END OF CONTACT US PAGE --------------- */
+
     
 }
 
@@ -918,6 +1073,161 @@
     }
                                                                                                                                     
                                         /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+
+                                                                                                                        /* --------------- CONTACT US PAGE --------------- */
+
+    .container-contactus {
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 2fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 40px;
+    }
+
+    .main-contactus {
+        display: grid;
+        grid-template-columns: 1fr 10% 1fr;
+        grid-template-rows: 7% 1fr 25% 0.5fr;
+        grid-template-areas:
+        "header header header"
+        "point-direct line inquiries"
+        "point-direct line building"
+        "additional-contact additional-contact additional-contact";
+    }
+
+    .vertical-line {
+        grid-area: line;
+        height: 75em;
+        margin-left: 50px;
+        border-left: 2px solid white;
+    }
+
+    .header-contactus {
+        font-size: 60px;
+        text-align: center;
+        grid-area: header;
+    }
+
+    .village-img {
+        grid-area: village;
+    }
+
+    .village-img h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-align: center;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .village-img img {
+        width: 100%;
+        height: 70%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .point-direct {
+        grid-area: point-direct;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "president"
+        "secretary"
+        "chairman";
+        padding: 20px;
+    }
+
+    .point-direct img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .point-direct img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    .point-direct figcaption {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .point-direct p {
+        text-align: left;
+        font-size: 18px;
+        width: 120%;
+    }
+
+    .president {
+        grid-area: president;
+    }
+
+    .secretary {
+        grid-area: secretary;
+    }
+
+    .chairman {
+        grid-area: chairman;
+    }
+
+    .inquiries {
+        grid-area: inquiries;
+        margin-top: 20px;
+    }
+
+    .inquiries h4 {
+        font-size: 22px;
+    }
+
+    .inquiries p {
+        font-size: 18px;
+    }
+
+    .building img {
+        grid-area: building;
+        /* margin-top: -60px; */
+        width: 100%;
+    }
+
+    .building figcaption {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+    .additional-contact {
+        grid-area: additional-contact;
+        margin-top: 20px;
+        border-top: 2px solid white;
+    }
+
+    .additional-contact .group {
+        margin-top: 20px;
+    }
+
+    .additional-contact p {
+        font-size: 18px;
+    }
+
+    .headshot {
+        width: 80%;
+        border-radius: 80%;
+    }
+                                        /* --------------- END OF CONTACT US PAGE --------------- */
 }
 
 @media only screen and (min-width: 1351px) and (max-width: 1400px) {
@@ -1618,6 +1928,162 @@
         "footer";
         gap: 50px;
     }
+
+                                        /* --------------- CONTACT US PAGE --------------- */
+
+    .container-contactus {
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 2fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 40px;
+    }
+
+    .main-contactus {
+        display: grid;
+        grid-template-columns: 1fr 10% 1fr;
+        grid-template-rows: 7% 1fr 25% 0.5fr;
+        grid-template-areas:
+        "header header header"
+        "point-direct line inquiries"
+        "point-direct line building"
+        "additional-contact additional-contact additional-contact";
+    }
+
+    .vertical-line {
+        grid-area: line;
+        height: 75em;
+        margin-left: 50px;
+        border-left: 2px solid white;
+    }
+
+    .header-contactus {
+        font-size: 60px;
+        text-align: center;
+        grid-area: header;
+    }
+
+    .village-img {
+        grid-area: village;
+    }
+
+    .village-img h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-align: center;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .village-img img {
+        width: 100%;
+        height: 70%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .point-direct {
+        grid-area: point-direct;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "president"
+        "secretary"
+        "chairman";
+        padding: 20px;
+    }
+
+    .point-direct img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .point-direct img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    .point-direct figcaption {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .point-direct p {
+        text-align: left;
+        font-size: 18px;
+        /* width: 100px; */
+    }
+
+    .president {
+        grid-area: president;
+    }
+
+    .secretary {
+        grid-area: secretary;
+    }
+
+    .chairman {
+        grid-area: chairman;
+    }
+
+    .inquiries {
+        grid-area: inquiries;
+        margin-top: 20px;
+    }
+
+    .inquiries h4 {
+        font-size: 22px;
+    }
+
+    .inquiries p {
+        font-size: 18px;
+    }
+
+    .building img {
+        grid-area: building;
+        /* margin-top: -60px; */
+        width: 100%;
+    }
+
+    .building figcaption {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+    .additional-contact {
+        grid-area: additional-contact;
+        margin-top: 20px;
+        border-top: 2px solid white;
+    }
+
+    .additional-contact .group {
+        margin-top: 20px;
+    }
+
+    .additional-contact p {
+        font-size: 18px;
+    }
+
+    .headshot {
+        width: 80%;
+        border-radius: 80%;
+    }
+                                        /* --------------- END OF CONTACT US PAGE --------------- */
+
+    
 }
 
 @media only screen and (min-width: 1042px) and (max-width: 1112px) {
@@ -1855,6 +2321,160 @@
     }
                                                                                                                                     
                                             /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+                                            /* --------------- CONTACT US PAGE --------------- */
+
+    .container-contactus {
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 2fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 40px;
+    }
+
+    .main-contactus {
+        display: grid;
+        grid-template-columns: 1fr 10% 1fr;
+        grid-template-rows: 7% 1fr 25% 0.5fr;
+        grid-template-areas:
+        "header header header"
+        "point-direct line inquiries"
+        "point-direct line building"
+        "additional-contact additional-contact additional-contact";
+    }
+
+    .vertical-line {
+        grid-area: line;
+        height: 75em;
+        margin-left: 50px;
+        border-left: 2px solid white;
+    }
+
+    .header-contactus {
+        font-size: 60px;
+        text-align: center;
+        grid-area: header;
+    }
+
+    .village-img {
+        grid-area: village;
+    }
+
+    .village-img h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-align: center;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .village-img img {
+        width: 100%;
+        height: 70%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .point-direct {
+        grid-area: point-direct;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "president"
+        "secretary"
+        "chairman";
+        padding: 20px;
+    }
+
+    .point-direct img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .point-direct img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    .point-direct figcaption {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .point-direct p {
+        text-align: left;
+        font-size: 18px;
+        /* width: 100px; */
+    }
+
+    .president {
+        grid-area: president;
+    }
+
+    .secretary {
+        grid-area: secretary;
+    }
+
+    .chairman {
+        grid-area: chairman;
+    }
+
+    .inquiries {
+        grid-area: inquiries;
+        margin-top: 20px;
+    }
+
+    .inquiries h4 {
+        font-size: 22px;
+    }
+
+    .inquiries p {
+        font-size: 18px;
+    }
+
+    .building img {
+        grid-area: building;
+        /* margin-top: -60px; */
+        width: 100%;
+    }
+
+    .building figcaption {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+    .additional-contact {
+        grid-area: additional-contact;
+        margin-top: 20px;
+        border-top: 2px solid white;
+    }
+
+    .additional-contact .group {
+        margin-top: 20px;
+    }
+
+    .additional-contact p {
+        font-size: 18px;
+    }
+
+    .headshot {
+        width: 80%;
+        border-radius: 80%;
+    }
+                                        /* --------------- END OF CONTACT US PAGE --------------- */
 }
 
 @media only screen and (min-width: 961px) and (max-width: 1043px) {
@@ -2088,4 +2708,158 @@
     }
                                                                                                                                     
                                         /* --------------- CSS FOR DISCOVER PAGE --------------- */
+
+                                                                                /* --------------- CONTACT US PAGE --------------- */
+
+    .container-contactus {
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 2fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 40px;
+    }
+
+    .main-contactus {
+        display: grid;
+        grid-template-columns: 1fr 10% 1fr;
+        grid-template-rows: 7% 1fr 25% 0.5fr;
+        grid-template-areas:
+        "header header header"
+        "point-direct line inquiries"
+        "point-direct line building"
+        "additional-contact additional-contact additional-contact";
+    }
+
+    .vertical-line {
+        grid-area: line;
+        height: 75em;
+        margin-left: 50px;
+        border-left: 2px solid white;
+    }
+
+    .header-contactus {
+        font-size: 54px;
+        text-align: center;
+        grid-area: header;
+    }
+
+    .village-img {
+        grid-area: village;
+    }
+
+    .village-img h2 {
+        color: white;
+        font-size: 60px;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-align: center;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .village-img img {
+        width: 100%;
+        height: 70%;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .point-direct {
+        grid-area: point-direct;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "president"
+        "secretary"
+        "chairman";
+        padding: 20px;
+    }
+
+    .point-direct img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    .point-direct img[data-src] {
+        filter: blur(0.5em);
+    }
+
+    .point-direct figcaption {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .point-direct p {
+        text-align: left;
+        font-size: 16px;
+        width: 120%;
+    }
+
+    .president {
+        grid-area: president;
+    }
+
+    .secretary {
+        grid-area: secretary;
+    }
+
+    .chairman {
+        grid-area: chairman;
+    }
+
+    .inquiries {
+        grid-area: inquiries;
+        margin-top: 20px;
+    }
+
+    .inquiries h4 {
+        font-size: 20px;
+    }
+
+    .inquiries p {
+        font-size: 16px;
+    }
+
+    .building img {
+        grid-area: building;
+        /* margin-top: -60px; */
+        width: 100%;
+    }
+
+    .building figcaption {
+        text-align: center;
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+    .additional-contact {
+        grid-area: additional-contact;
+        margin-top: 20px;
+        border-top: 2px solid white;
+    }
+
+    .additional-contact .group {
+        margin-top: 20px;
+    }
+
+    .additional-contact p {
+        font-size: 16px;
+    }
+
+    .headshot {
+        width: 80%;
+        border-radius: 80%;
+    }
+                                        /* --------------- END OF CONTACT US PAGE --------------- */
 }

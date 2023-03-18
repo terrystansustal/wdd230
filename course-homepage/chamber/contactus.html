@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Contact Us</title>
     <meta name="description" content="The Daly City Chamber of Commence can help citizens of the community with their business by providing
     memberships for those who wants increased benefits.">
     <link href="styles/base.css" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
 </head>
-<body class="container-directory">
+<body class="container-contactus">
     <header>
         <a href="#">
             <img id="logo" src="images/dalycity-logo.webp" alt="Logo of Daly City Chamber of Commence">
@@ -44,9 +44,78 @@
         <h1 id="title">Daly City<br>Chamber of Commence</h1>
 
         <!-- <p class="date"><span id="todayDate"></span></p> -->
-        <p id="date"><span id="todayDate"></span> | <span id="todayVisit"></span></p>
+        <p id="date"><span id="todayDate"></span></p>
 
     </header>
+
+    <main class="main-contactus">
+        <h3 class="header-contactus">Contact Us</h3>
+        <div class="vertical-line"></div>
+        <div class="point-direct">
+            <figure class="president">
+                <img class="headshot" src="images/contactus/placeholder.jpg" data-src="images/contactus/president.webp" alt="A photo of the President of the Chamber.">
+                <figcaption>President Myka Winter</figcaption>
+            </figure>
+            <p>Myka Winter is the President of the Chamber of Commerce in Daly City, CA, where she has been actively involved for the past 10 years. She owns and operates a successful marketing agency that specializes in helping small businesses increase their online presence. In her free time, Myka enjoys hiking in the nearby hills, trying out new recipes, and volunteering at a local animal shelter.</p>
+
+            <figure class="secretary">
+                <img class="headshot" src="images/contactus/placeholder.jpg" data-src="images/contactus/secretary_1.webp" alt="A photo of the Secretary of the Chamber.">
+                <figcaption>Secretary | John Henrie</figcaption>
+            </figure>
+            <p>John Henrie is the Secretary of the Chamber of Commerce in Daly City, CA, where he has been an active member for over 5 years. He runs his own accounting firm that caters to local businesses in the area. In his free time, John enjoys playing basketball with his friends, attending local concerts, and reading non-fiction books on personal finance.</p>
+
+            <figure class="chairman">
+                <img class="headshot" src="images/contactus/placeholder.jpg" data-src="images/contactus/chairman_1.webp" alt="A photo of the Chairman of the Commence">
+                <figcaption>Chairman | Michael Stevenson</figcaption>
+            </figure>
+            <p>Michael Stevenson is the Chairman of the Chamber of Commence in Daly City, CA, where he has been an active member for 6 years. He owns a gas station that serves the community in the area. When John is not busy, he enjoys going to the movie theater, going out with his family for a quick trip, and fishing with his friends somewhere at Halfmoon Bay, CA.</p>
+        </div>
+
+        <div class="inquiries">
+            <h4>1. Memberships</h4>
+            <p>If you have any questions about memberships or accessing existing accounts benefits, please contact: <br>
+            membership.inquire@dalycitycommence.org</p>
+
+            <h4>2. Network</h4>
+            <p>If you have any questions about networking, please contact: <br>
+            network.inquire@dalycitycommence.org</p>
+
+            <h4>3. Sponsorship Opportunities</h4>
+            <p>If you have any questions about sponsorship opportunities please contact: <br>
+            sponsor.inquire@dalycitycommence.org</p>
+
+            <h4>4. General Inquires</h4>
+            <p>If you have any questions about other questions please contact: <br>
+            generalquestions.inquire@dalycitycommence.org</p>
+        </div>
+        
+        <figure class="building">
+            <img src="images/contactus/placeholder.jpg" data-src="images/contactus/building.webp" alt="A photo of the building of the Chamber">
+            <figcaption>Headquarters of The Chamber of Commence in Daly City, CA.</figcaption>
+        </figure>
+
+        <form class="additional-contact" method="get" action="received-inquiry.html">
+            <p>Send us a message or comment by using the form below.</p>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">First name*<input type="text" name="fname" placeholder=" Your first name" required></label>
+                <label class="top">Last name*<input type="text" name="lname" placeholder="Your last name" required></label>
+                <label class="top">Email*<input type="text" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Company name<input type="text" name="cname" placeholder="Your company name"></label>
+                <div class="group">Are you a member of the chamber?
+                    <label class="sbs"><input type="radio" name="member">Yes</label>
+                    <label class="sbs"><input type="radio" name="member">No</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Questions</legend>
+                <label class="bottom">Please describe your question or comments you may have below<textarea name="qandc"></textarea></label>
+            </fieldset>
+
+            <input class="submitBtn" type="submit" value="Submit your response">
+        </form>
+    </main>
 
     <footer>
         <a id="logo-link" href="#">
@@ -63,8 +132,7 @@
 
         <p class="copy">&copy; <span id="current-year"></span> Daly City Chamber of Commence | Terrystan N. Sustal | WDD 230 Project | Last modified: <span id="last-modified"></span></p>
     </footer>
-    <script src="scripts/directory.js"></script>
-    <script src="scripts/visit.js"></script>
+    <script src="scripts/lazyloading.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/date.js"></script>
     <script src="scripts/current-year.js"></script>
