@@ -1451,6 +1451,45 @@
                                         /* --------------- END OF CONTACT US PAGE --------------- */
 }
 
+@media only screen and (min-width: 1450px) {
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+}
+
 @media only screen and (min-width: 1351px) and (max-width: 1400px) {
 
     #hero-img img {
