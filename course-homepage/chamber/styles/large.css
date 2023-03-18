@@ -1942,6 +1942,10 @@
         font-size: 15px;
     }
 
+    .networking-p {
+        font-size: 16px;
+    }
+
     .weather-title {
         margin-left: 25px;
     }
@@ -2349,6 +2353,10 @@
         font-size: 1.2em;
     }
 
+    .networking-p {
+        font-size: 16px;
+    }
+
     .weather-title {
         grid-area: title;
         text-align: right;
@@ -2738,6 +2746,10 @@
 
     nav a {
         font-size: 1.1em;
+    }
+
+    .networking-p {
+        font-size: 16px;
     }
 
     .weather-title {
