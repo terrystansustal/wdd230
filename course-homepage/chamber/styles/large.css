@@ -1188,7 +1188,7 @@
     .container-directory {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 12% 1fr 12%;
+        grid-template-rows: 16% 1fr 15%;
         grid-template-areas:
         "header"
         "main"
@@ -2146,7 +2146,7 @@
     .container-directory {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 1fr 10%;
+        grid-template-rows: 20% 1fr 10%;
         grid-template-areas:
         "header"
         "main"
