@@ -72,8 +72,8 @@
     /* GRID FOR HOME PAGE */
     
     .container {
-        max-width: 1600px;
-        margin: 0 auto;
+        /* max-width: 1600px;
+        margin: 0 auto; */
         display: grid;
         grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
         grid-template-rows: 16% 3% 20% 23% 16% 1fr;
@@ -2946,8 +2946,6 @@
 
     .container-contactus {
         display: grid;
-        max-width: 1600px;
-        margin: 0 auto;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 2fr 10%;
         grid-template-areas:

@@ -177,8 +177,8 @@ nav ul.open {
 /* GRID AREA FOR HOME-PAGE */
 
 .container {
-    max-width: 1600px;
-    margin: 0 auto;
+    /* max-width: 1600px;
+    margin: 0 auto; */
     display: grid;
     grid-template-columns: 0.2fr 2fr 5fr 2fr 0.2fr;
     grid-template-rows: 12% 2fr 2fr 1fr 0.2fr;
