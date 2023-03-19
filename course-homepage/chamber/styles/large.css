@@ -1483,7 +1483,7 @@
     .container-join {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 16% 2fr 10%;
+        grid-template-rows: 16% 2fr 15%;
         grid-template-areas:
         "header"
         "main"
