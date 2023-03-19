@@ -494,7 +494,7 @@
     .container-join {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 14% 2fr 0.2fr;
+        grid-template-rows: 14% 2fr 14%;
         grid-template-areas:
         "header"
         "main"
@@ -724,10 +724,10 @@
 
     .container-contactus {
         display: grid;
-        max-width: 1600px;
-        margin: 0 auto;
+        /* max-width: 1600px;
+        margin: 0 auto; */
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 2fr 10%;
+        grid-template-rows: 10% 2fr 12%;
         grid-template-areas:
         "header"
         "main"
