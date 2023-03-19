@@ -1478,12 +1478,24 @@
 }
 
 @media only screen and (min-width: 1550px) {
-    .container-directory {
-        max-width: 1600px;
-        margin: 0 auto;
+
+                                                /* Join.html */
+    .container-join {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 16% 1fr 20%;
+        grid-template-rows: 16% 2fr 10%;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        gap: 50px;
+    }
+
+                                                    /* End of Join.html */
+    .container-directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16% 1fr 16%;
         grid-template-areas:
         "header"
         "main"
@@ -1502,7 +1514,9 @@
     .list section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin: 0;
+        max-width: 1600px;
+        margin: 0 auto;
+        /* margin: 0; */
         text-align: center;
         padding: 10px;
         border: none;
@@ -1523,6 +1537,7 @@
 
     .list section:nth-child(even) {
         background-color: #453A49;
+        width: 100%;
     }
 
     section a {
