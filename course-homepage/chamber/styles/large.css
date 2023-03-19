@@ -1479,6 +1479,8 @@
 
 @media only screen and (min-width: 1550px) {
     .container-directory {
+        max-width: 1600px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 20% 1fr 16%;
