@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Roboto&display=swap');
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@media only screen and (min-width: 992px) {
+    /* /* body {
+        margin: 0 auto;
+        background-color: #FAEDCD;
+    } */
+
+    .logo img {
+        width: 15%;
+    }
+
+    /* =========== NAV BAR ========== */
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0 80px;
+        font-size: 30px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul#primaryNav {
+        display: flex;
+    }
+
+    nav ul li.active a {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+    }
+
+    nav ul li a:hover {
+        background-color: #8B9177;
+    }
+
+    nav ul.open {
+        display: block;
+    }
+
+    /* === HERO IMAGE === */
+
+    .hero-img img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+    }
+ 
+    .hero-msg {
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        background-color: transparent;
+        display: none;
+    }
+
+    .hero-msg img {
+        display: none;
+    }
+
+    #hero-h1 {
+        display: inline;
+        position: absolute;
+        left: 20%;
+        top: 45%;
+        padding: 5px;
+        width: 300px;
+        transform: translate(-50%, -50%);
+        border: 2px inset #D4A373;
+        background-color: rgba(101, 67, 33, 0.5);
+        z-index: 1;
+        font-size: 25px;
+        color: white;
+    }
+
+    /* =========== MAIN CONTAINER ========== */
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1% 1fr 1fr 1fr 1fr 1fr 1%;
+        grid-template-rows: 20% 20% 45% 30%;
+        grid-template-areas:
+        "order order order order order order order"
+        ". total-order total-order total-order total-order total-order ."
+        "offered-fruits offered-fruits offered-fruits offered-fruits offered-fruits offered-fruits offered-fruits"
+        ". weather weather . summary summary .";
+    }
+
+    /* === ORDER === */
+
+    .order {
+        position: relative;
+        margin-top: 50px;
+        grid-area: order;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20% 35% 35%;
+        grid-template-areas: 
+        "h2 h2 h2 h2 h2 h2"
+        "step-1 step-1 step-2 step-2 step-3 step-3"
+        ". . orderBtn orderBtn . .";
+        background-color: #8B9177;
+    }
+
+    .order-h2 {
+        grid-area: h2;
+        border-bottom: 3px solid #FEFAE0;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        color: white;
+        padding-bottom: 100px;
+    }
+
+    .order h3 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
+    }
+
+    .order p {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .step-1 {
+        grid-area: step-1;
+        text-align: center;
+        color: white;
+        width: 75%;
+        font-size: 16px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .step-2 {
+        grid-area: step-2;
+        text-align: center;
+        color: white;
+        width: 75%;
+        font-size: 16px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .step-3 {
+        grid-area: step-3;
+        text-align: center;
+        color: white;
+        width: 85%;
+        font-size: 16px;
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .orderBtn {
+        grid-area: orderBtn;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 40px;
+        background-color: #D4A373;
+        border: 2px solid #FEFAE0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    /* === TOTAL ORDER === */
+
+    .total-order {
+        margin-top: 50px;
+        grid-area: total-order;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30% 80%;
+        grid-template-areas:
+        "h2 h2 h2"
+        "p p img";
+        background-color: #8B9177;
+    }
+
+    .total-order-h2 {
+        grid-area: h2;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        padding-bottom: 10px;
+        color: white;
+        border-bottom: 3px solid #FEFAE0;
+    }
+
+    .total-order-p {
+        grid-area: p;
+        text-align: center;
+        padding-top: 80px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
+    .total-order-img {
+        grid-area: img;
+    }
+
+    .total-order img {
+        width: 50%;
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #FEFAE0;
+    }
+
+    /* === OFFERED FRUTIS === */
+
+    .offered-fruits {
+        margin-top: 50px;
+        grid-area: offered-fruits;
+        display: grid;
+        grid-template-columns: 10% 1fr 10% 1fr 10%;
+        grid-template-rows: 10% 1fr 1fr;
+        grid-template-areas:
+        "h2 h2 h2 h2 h2"
+        ". bananas . mangos ."
+        ". oranges . pineapple .";
+        background-color: #8B9177;
+    }
+
+    .offered-fruits img {
+        width: 40%;
+        border: 3px solid #FEFAE0;
+    }
+
+    .offered-fruits-h2 {
+        grid-area: h2;
+        border-bottom: 3px solid #FEFAE0;
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+
+    .offered-fruits p {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .bananas {
+        grid-area: bananas;
+        margin-top: 30px;
+
+    }
+
+    .bananas img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .mangos {
+        grid-area: mangos;
+        margin-top: 30px;
+    }
+
+    .mangos img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .oranges {
+        grid-area: oranges;
+    }
+
+    .oranges img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .pineapple {
+        grid-area: pineapple;
+    }
+
+    .pineapple img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    /* === SUMMARY === */
+
+    .summary {
+        margin-top: 50px;
+        grid-area: summary;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 14% 35% 12%;
+        grid-template-areas:
+        "h2"
+        "img"
+        "paragraph";
+        background-color: #8B9177;
+    }
+
+    .summary img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #FEFAE0;
+    }
+
+    .summary figcaption {
+        padding-top: 5px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    .summary-h2 {
+        grid-area: h2;
+        border-bottom: 3px solid #FEFAE0;
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+
+    .summary-img {
+        grid-area: img;
+        margin-top: 30px;
+    }
+
+    .summary-p {
+        grid-area: paragraph;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+    }
+
+    /* === WEATHER === */
+
+    .weather {
+        margin-top: 50px;
+        grid-area: weather;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 16% 35% 5% 5% 5% 24%;
+        grid-template-areas:
+        "h2 h2 h2"
+        "img img img"
+        "degrees degrees degrees"
+        "condition condition condition"
+        "humid humid humid"
+        "three-days three-days three-days";
+        background-color: #8B9177;
+    }
+
+    .weather-h2 {
+        grid-area: h2;
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        border-bottom: 3px solid #FEFAE0;
+    }
+
+    .weather-img {
+        grid-area: img;
+        border-bottom: 3px solid #FEFAE0;
+    }
+
+    #weather-image {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .degrees {
+        grid-area: degrees;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .condition {
+        grid-area: condition;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .humidity {
+        grid-area: humid;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .forecast {
+        grid-area: three-days;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    /* === FOOTER === */
+    
+    footer {
+        margin-top: 500px;
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 1fr 3% 1fr 10%;
+        grid-template-rows: 22% 60% 0.4fr;
+        /* grid-template-areas:
+        "social social social social social social"
+        "logo logo"; */
+        grid-template-areas: 
+        "social social social social social social social"
+        "logo logo contact contact . siteplan ."
+        "copy copy copy copy copy copy copy";
+        background-color: #CCD5AE;
+    }
+
+    .footer-logo img{
+        width: 50%;
+    }
+
+    .social {
+        grid-area: social;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px solid #FEFAE0;
+    }
+
+    .social img {
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-logo {
+        grid-area: logo;
+        margin-left: 50px;
+    }
+
+    .siteplan {
+        grid-area: siteplan;
+        text-align: left;
+    }
+
+    .siteplan a {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+
+    .contact-info {
+        grid-area: contact;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .copyright {
+        grid-area: copy;
+        padding: 5px;
+        text-align: center;
+        border-top: 3px solid #FEFAE0;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    /* ========== ABOUT US PAGE ========== */
+
+    .aboutUs-container {
+        grid-template-columns: 1fr 1fr 1% 1fr 1fr;
+        grid-template-rows: 10% 30% 1fr;
+        grid-template-areas:
+        "h1 h1 h1 h1 h1"
+        "story-1 story-1 . additional-info additional-info"
+        "story-1 story-1 . google-map google-map";
+    }
+
+    .aboutUs-h1 .bg-color {
+        grid-area: h1;
+        background-color: #8B9177;
+        width: 100%;
+        height: 100px;
+    }
+
+    .aboutUs-h1 h1 {
+        margin-top: -75px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .story-1 {
+        grid-area: story-1;
+    }
+
+    .story-1 img {
+        width: 50%;
+        border: 3px solid #D4A373;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    .story-1 figcaption, p {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 25px;
+    }
+
+    .additional-info {
+        grid-area: additional-info;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 15%;
+        grid-template-areas: 
+        "office-hours"
+        "contact-information";
+    }
+
+    .additional-info h2 {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .additional-info ul {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .office-hours {
+        grid-area: office-hours;
+    }
+
+    .contact-information {
+        grid-area: contact-information;
+    }
+
+    .google-map {
+        margin-top: 25px;
+        grid-area: google-map;
+    }
+
+    .google-map h2 {
+        color: black;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .google-map iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    .main-container {
+        grid-template-rows: 20% 18% 45% 30%;
+    }
+
+    .total-order {
+        grid-template-rows: 20% 80%;
+    }
+
+    .total-order img {
+        width: 35%;
+    }
+
+    .summary {
+        grid-template-rows: 14% 43% 12%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .hero-img img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 700px;
+    }
+
+    #hero-h1 {
+        
+        left: 20%;
+        top: 55%;
+        width: 400px;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+    }
+
+    .summary img {
+        width: 40%;
+    }
+
+    .summary {
+        grid-template-rows: 14% 42% 12%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .summary img {
+        width: 40%;
+    }
+
+    .summary {
+        grid-template-rows: 14% 50% 12%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .hero-img img {
+        height: 800px;
+    }
+
+    #hero-h1 {
+        left: 20%;
+        top: 60%;
+        width: 400px;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+    }
+
+    .total-order {
+        grid-template-rows: 20% 80%;
+    }
+
+    .total-order img {
+        width: 30%;
+    }
+
+    .summary img {
+        width: 40%;
+    }
+    
+    .summary {
+        grid-template-rows: 14% 54% 12%;
+    }
+}

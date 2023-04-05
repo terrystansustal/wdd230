@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link href="styles/small.css" rel="stylesheet"> <!-- Small view -->
+    <link href="styles/medium.css" rel="stylesheet"> <!-- Medium view -->
+    <link href="styles/large.css" rel="stylesheet"> <!-- Large view  -->
+    <link href="styles/normalize.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/home/logo/bountiful-foods.jpg" alt="Logo of Bountiful Foods">
+        </div>
+
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-img">
+        <img src="images/home/hero/hero.jpg" alt="Image of two farmers">
+        <h1 id="hero-h1">Indulge in our freshly harvested fruits and beverages by paying us a visit today. 
+        You will have the opportunity to taste the juiciest and most flavorful fruits that 
+        come straight from our farm to your table.
+    </h1>
+    </div>
+
+    <section class="hero-msg">
+        <img src="images/home/hero/hero-fruit.jpg" alt="Image of a plant">
+        <h1>Indulge in our freshly harvested fruits and beverages by paying us a visit today. 
+            You will have the opportunity to taste the juiciest and most flavorful fruits that 
+            come straight from our farm to your table.
+        </h1>
+    </section>
+
+    <main class="main-container">
+
+        <!-- Order Section -->
+        <div class="order">
+            <section class="order-h2">
+                <h2>How to Order Fresh Drinks</h2>
+            </section>
+
+            <div class="step-1">
+                <h3>Step 1</h3>
+                <p>To order your drink, we'll need a few pieces of information from you.
+                    Please provide us with your first name, email address,
+                    and phone number. This will allow us to contact you regarding your order
+                    and ensure a smooth and easy process.
+                </p>
+            </div>
+
+            <div class="step-2">
+                <h3>Step 2</h3>
+                <p>Please select three fruits from the dropdown menus to create your drink.
+                    Each dropdown menu is populated with a list of available fruits to choose from.
+                    Once you have selected your three fruits, you can proceed to the next
+                    step in the ordering process.
+                </p>
+            </div>
+
+            <div class="step-3">
+                <h3>Step 3</h3>
+                <p>If you have any special instructions or requests regarding your order, 
+                    please enter them in the space provided below. 
+                    This could include things like additional flavors or modifications to the recipe. 
+                    We will do our best to accommodate your requests and ensure that your drink is 
+                    prepared exactly to your liking. Once your order is complete click the submit button.
+                </p>
+            </div>
+
+            <button class="orderBtn">MAKE YOUR DRINK</button>
+        </div>
+
+        <div class="total-order">
+            <section class="total-order-h2">
+                <h2>Total Order of Drinks</h2>
+            </section>
+
+            <div class="total-order-p">
+                <p>The total number of drinks you have ordered is <span id="num-Of-Order"></span>.</p>
+            </div>
+
+            <div class="total-order-img">
+                <img src="images/home/total-order/total-order.jpg" alt="Image of two drinks">
+            </div>
+        </div>
+
+        <div class="offered-fruits">
+            <section class="offered-fruits-h2">
+                <h2>Fruits we Offer!</h2>
+            </section>
+
+            <div class="bananas">
+                <img src="images/home/avai-fruits/bananas.jpg" alt="Image of a banana">
+                <p>
+                    Banana drink is good for health because bananas are rich in nutrients 
+                    such as potassium, fiber, and vitamin C, which can help regulate blood 
+                    pressure, improve digestion, and boost immunity. Bananas are also a great 
+                    source of natural energy, making banana drink a perfect pre-workout beverage. 
+                    Additionally, the high levels of antioxidants in bananas may help reduce the risk of 
+                    certain diseases such as heart disease and cancer. Overall, incorporating banana drink 
+                    into your diet can be a healthy and delicious way to improve your overall well-being.
+                </p>
+            </div>
+
+            <div class="mangos">
+                <img src="images/home/avai-fruits/mangos.jpg" alt="Image of a mango">
+                <p>
+                    Mango drink is good for health because mangos are a rich source of nutrients, 
+                    such as vitamins A, C, and E, which can help support healthy skin, improve immune 
+                    function, and protect against cellular damage. Mangos are also high in dietary fiber, 
+                    which can help promote digestive health and prevent constipation. Additionally, 
+                    the high levels of antioxidants in mangos may help reduce the risk of certain diseases, 
+                    such as heart disease and cancer. Overall, incorporating mango drink into your diet can 
+                    be a tasty and nutritious way to support your overall health and well-being.
+                </p>
+            </div>
+
+            <div class="oranges">
+                <img src="images/home/avai-fruits/oranges.jpg" alt="Image of an orange">
+                <p>
+                    Orange drink is good for health because oranges are an excellent source of vitamin C, 
+                    which is essential for supporting immune function, collagen synthesis, and iron 
+                    absorption. Oranges are also a good source of dietary fiber, which can help regulate 
+                    blood sugar levels and promote digestive health. Additionally, the antioxidants in 
+                    oranges may help reduce inflammation and protect against chronic diseases, such as heart 
+                    disease and cancer. Overall, incorporating orange drink into your diet can be a tasty and 
+                    healthy way to support your overall health and well-being.
+                </p>
+            </div>
+
+            <div class="pineapple">
+                <img src="images/home/avai-fruits/pineapple.jpg" alt="Image of a pineapple">
+                <p>
+                    Pineapple drink is good for health because pineapples are a rich source of vitamins, 
+                    minerals, and enzymes, such as vitamin C, potassium, and bromelain, which can help 
+                    support digestive health, reduce inflammation, and boost the immune system. Pineapples 
+                    are also low in calories and high in fiber, making them a great addition to a healthy 
+                    and balanced diet. Additionally, the antioxidants in pineapples may help protect against 
+                    chronic diseases, such as heart disease and cancer. Overall, incorporating pineapple 
+                    drink into your diet can be a refreshing and nutritious way to support your overall 
+                    health and well-being.
+                </p>
+            </div>
+        </div>
+
+        <div class="summary">
+            <section class="summary-h2">
+                <h2>Pay a Quick Visit!</h2>
+            </section>
+
+            <figure class="summary-img">
+                <img src="images/home/coast-sum/summary.jpg" alt="Image of the coast">
+                <figcaption>South Carlsbad State Beach</figcaption>
+            </figure>
+            
+            <div class="summary-p">
+                <p>South Carlsbad State Beach is a beautiful and 
+                    popular beach located in San Diego County, California. 
+                    It spans over three miles and is known for its stunning ocean views, 
+                    pristine sandy beach, and great surfing conditions. The beach also features a 
+                    large campground with over 200 campsites, as well as picnic areas and fire rings for 
+                    beach bonfires. Visitors can enjoy activities like swimming, sunbathing, hiking, 
+                    and fishing. Overall, South Carlsbad State Beach is a must-visit destination for anyone 
+                    looking to experience the natural beauty and outdoor recreational opportunities of 
+                    Southern California.
+                </p>
+            </div>
+        </div>
+
+        <div class="weather">
+            <section class="weather-h2">
+                <h2>Weather</h2>
+            </section>
+
+            <!-- Display the weather image from API -->
+            <div class="weather-img">
+                <img id="weather-image" src="#" alt="">
+            </div>
+
+            <!-- Display the temperature from API -->
+            <div class="degrees">
+                <p><strong>Temperature: </strong><span id="temperature"></span>&deg;F</p>
+            </div>
+
+            <!-- Display the current condition from API -->
+            <div class="condition">
+                <p><strong>Current condition: </strong> <span id="current-condition"></span></p>
+            </div>
+
+            <!-- Display the humidity from API -->
+            <div class="humidity">
+                <p><strong>Humidity: </strong><span id="current-humid"></span>%</p>
+            </div>
+
+            <!-- Display the forecast for the next three days from API -->
+            <section class="forecast">
+                <h3>3-Day Weather Forecast</h3>
+                <p>The following day: <span id="day-1-temp"></span>&deg;F</p>
+                <p>The day after tomorrow: <span id="day-2-temp"></span>&deg;F</p>
+                <p>In two days' time: <span id="day-3-temp"></span>&deg;F</p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/">
+                <img src="images/home/social-media/facebook.jpg" alt="Logo of Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/">
+                <img src="images/home/social-media/instagram.jpg" alt="Logo of Instagram">
+            </a>
+
+            <a href="https://twitter.com/">
+                <img src="images/home/social-media/twitter.jpg" alt="Logo of Twitter">
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <img src="images/home/social-media/youtube.jpg" alt="Logo of Youtube">
+            </a>
+        </div>
+
+        <div class="footer-logo">
+            <img src="images/home/logo/bountiful-foods.jpg" alt="Logo of Bountiful Foods">
+        </div>
+
+        <div class="siteplan">
+            <h2><a href="#">Siteplan</a></h2>
+            <h2>Data API</h2>
+            <p>Weather is based on <a href="https://openweathermap.org/api">OpenWeatherMap</a></p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact information</h2>
+            <p>Phone number: +1(000)-000-0000 <br>
+            Email Address: bountiful-foods@fakegmail.com <br>
+            Address: 123 Fake St. Carlsbad, CA. 92009 </p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> Bountiful Foods | Terrystan N. Sustal | WDD 230 Final Project | Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/lastUpdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
