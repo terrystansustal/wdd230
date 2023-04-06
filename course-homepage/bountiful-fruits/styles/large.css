@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Montserrat&family=Roboto&display=swap');
 /* font-family: 'Dancing Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
@@ -525,7 +525,8 @@ font-family: 'Roboto', sans-serif; */
 
     .aboutUs-h1 h1 {
         font-family: 'Dancing Script', cursive;
-        font-size: 36px;
+        margin-top: 20px;
+        font-size: 50px;
         color: white;
         text-align: center;
         z-index: 1;
@@ -665,6 +666,14 @@ font-family: 'Roboto', sans-serif; */
         margin-right: auto;
         width: 450px;
         height: 400px;
+    }
+
+    /* ========== FRESH PAGE ========== */
+    #output p {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -856,13 +865,20 @@ font-family: 'Roboto', sans-serif; */
         margin-top: 200px;
     }
 
+    /* ========== ABOUT US PAGE ========== */
+
     .aboutUs-container {
         grid-template-columns: 1fr 10% 1fr 1fr;
-        grid-template-rows: 5% 0.5fr 1.5fr;
+        grid-template-rows: 6% 0.5fr 1.5fr;
         grid-template-areas:
         "h1 h1 h1 h1"
         "story-1 story-1 story-1 story-1"
         "additional-info . testimonials testimonials";
+    }
+
+    .aboutUs-h1 h1 {
+        font-size: 50px;
+        margin-top: 20px;
     }
 
     .additional-info {

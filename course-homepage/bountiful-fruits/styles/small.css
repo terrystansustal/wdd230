@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Montserrat&family=Roboto&display=swap');
 /* font-family: 'Dancing Script', cursive;
+font-family: 'Kaushan Script', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
@@ -915,7 +916,7 @@ font-family: 'Roboto', sans-serif; */
         left: 50%;
         transform: translate(-50%, -30%);
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         font-size: 16px;
         max-width: 500px;
         color: white;
@@ -988,12 +989,12 @@ font-family: 'Roboto', sans-serif; */
     }
 
     .order h3 {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, ;
         font-size: 20px;
     }
 
     .order p {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     }
 
     .step-1 {
@@ -1065,7 +1066,7 @@ font-family: 'Roboto', sans-serif; */
     .total-order-h2 {
         grid-area: h2;
         text-align: center;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Kaushan Script', cursive, 'Times New Roman', Times, serif;
         font-size: 25px;
         padding-bottom: 10px;
         color: white;
@@ -1076,7 +1077,7 @@ font-family: 'Roboto', sans-serif; */
         grid-area: p;
         text-align: center;
         padding-top: 80px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         font-size: 16px;
         color: white;
     }
@@ -1119,14 +1120,14 @@ font-family: 'Roboto', sans-serif; */
     .offered-fruits-h2 {
         grid-area: h2;
         border-bottom: 3px solid #FEFAE0;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Kaushan Script', cursive, 'Times New Roman', Times, serif;
         font-size: 25px;
         color: white;
         text-align: center;
     }
 
     .offered-fruits p {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         font-size: 16px;
         text-align: center;
@@ -1207,7 +1208,7 @@ font-family: 'Roboto', sans-serif; */
     .summary-h2 {
         grid-area: h2;
         border-bottom: 3px solid #FEFAE0;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Kaushan Script', cursive, 'Times New Roman', Times, serif;
         font-size: 25px;
         color: white;
         text-align: center;
@@ -1220,7 +1221,7 @@ font-family: 'Roboto', sans-serif; */
 
     .summary-p {
         grid-area: paragraph;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         text-align: center;
     }
@@ -1243,7 +1244,7 @@ font-family: 'Roboto', sans-serif; */
 
     .weather-h2 {
         grid-area: h2;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Kaushan Script', cursive, 'Times New Roman', Times, serif;
         font-size: 25px;
         color: white;
         text-align: center;
@@ -1263,27 +1264,27 @@ font-family: 'Roboto', sans-serif; */
 
     .degrees {
         grid-area: degrees;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
     }
 
     .condition {
         grid-area: condition;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         text-align: left;
     }
 
     .humidity {
         grid-area: humid;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         text-align: left;
     }
 
     .forecast {
         grid-area: three-days;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         text-align: left;
     }
@@ -1341,17 +1342,17 @@ font-family: 'Roboto', sans-serif; */
     }
 
     .siteplan h2{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
     }
 
     .siteplan p {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
     }
 
     .siteplan a {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         text-decoration: none;
     }
@@ -1359,7 +1360,7 @@ font-family: 'Roboto', sans-serif; */
     .contact-info {
         grid-area: contact;
         text-align: left;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
     }
 
@@ -1368,7 +1369,7 @@ font-family: 'Roboto', sans-serif; */
         padding: 5px;
         text-align: center;
         border-top: 3px solid #FEFAE0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
     }
 
@@ -1399,7 +1400,7 @@ font-family: 'Roboto', sans-serif; */
 
     .aboutUs-h1 h1 {
         /* margin-top: -75px; */
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Kaushan Script', cursive, 'Times New Roman', Times, serif;
         font-size: 36px;
         color: white;
         text-align: center;
@@ -1423,7 +1424,7 @@ font-family: 'Roboto', sans-serif; */
 
     .story-1 figcaption, p {
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         color: white;
         line-height: 25px;
         padding-left: 10px;
@@ -1441,11 +1442,11 @@ font-family: 'Roboto', sans-serif; */
 
     .additional-info h2 {
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     }
 
     .additional-info ul {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         font-size: 20px;
         text-align: center;
         list-style-type: none;
@@ -1466,7 +1467,7 @@ font-family: 'Roboto', sans-serif; */
 
     .testimonials h2 {
         grid-area: h2;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Kaushan Script', cursive, 'Times New Roman', Times, serif;
         font-size: 25px;
         color: white;
         text-align: center;
@@ -1477,7 +1478,7 @@ font-family: 'Roboto', sans-serif; */
 
     .testimonials p {
         grid-area: p;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         font-size: 20px;
         color: white;
         padding: 5px;
@@ -1491,7 +1492,7 @@ font-family: 'Roboto', sans-serif; */
     .google-map h2 {
         color: black;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
     }
 
     .google-map iframe {
@@ -1521,7 +1522,7 @@ font-family: 'Roboto', sans-serif; */
 
     .fresh-h1 h1 {
         text-align: center;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Dancing Script', cursive, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         font-size: 40px;
         color: white;
         z-index: 1;
@@ -1544,7 +1545,7 @@ font-family: 'Roboto', sans-serif; */
     form legend {
         padding: 5px;
         color: white;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
         font-size: 20px;
     }
 
