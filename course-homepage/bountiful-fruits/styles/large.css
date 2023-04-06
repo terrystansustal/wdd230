@@ -70,7 +70,7 @@ font-family: 'Roboto', sans-serif; */
         display: inline;
         position: absolute;
         left: 20%;
-        top: 45%;
+        top: 60%;
         padding: 5px;
         width: 300px;
         transform: translate(-50%, -50%);
@@ -86,7 +86,7 @@ font-family: 'Roboto', sans-serif; */
     .main-container {
         display: grid;
         grid-template-columns: 1% 1fr 1fr 1fr 1fr 1fr 1%;
-        grid-template-rows: 23% 20% 50% 30%;
+        grid-template-rows: 23% 14% 50% 30%;
         grid-template-areas:
         "order order order order order order order"
         ". total-order total-order total-order total-order total-order ."
@@ -219,7 +219,7 @@ font-family: 'Roboto', sans-serif; */
     }
 
     .total-order img {
-        width: 50%;
+        width: 30%;
         display: block;
         margin-top: 30px;
         margin-left: auto;
@@ -743,7 +743,7 @@ font-family: 'Roboto', sans-serif; */
     #hero-h1 {
         
         left: 20%;
-        top: 55%;
+        top: 80%;
         width: 400px;
         transform: translate(-50%, -50%);
         font-size: 30px;
@@ -937,18 +937,51 @@ font-family: 'Roboto', sans-serif; */
 
     #hero-h1 {
         left: 20%;
-        top: 60%;
+        top: 90%;
         width: 400px;
         transform: translate(-50%, -50%);
         font-size: 30px;
+    }
+    .step-1 h3 {
+        font-size: 30px;
+    }
+
+    .step-1 p {
+        font-size: 24px;
+    }
+
+    .step-2 h3 {
+        font-size: 30px;
+    }
+
+    .step-2 p {
+        font-size: 24px;
+    }
+
+    .step-3 h3 {
+        font-size: 30px;
+    }
+
+    .step-3 p {
+        font-size: 24px;
     }
 
     .total-order {
         grid-template-rows: 20% 80%;
     }
 
+    .total-order-h2 {
+        margin-top: -30px;
+        font-size: 36px;
+    }
+
     .total-order img {
         width: 30%;
+    }
+
+    .offered-fruits-h2 {
+        margin-top: -15px;
+        font-size: 40px;
     }
 
     .offered-fruits img {
