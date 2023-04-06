@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <link href="styles/small.css" rel="stylesheet"> <!-- Small view -->
+    <link href="styles/medium.css" rel="stylesheet"> <!-- Medium view -->
+    <link href="styles/large.css" rel="stylesheet"> <!-- Large view  -->
+    <link href="styles/normalize.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/home/logo/bountiful-foods.jpg" alt="Logo of Bountiful Foods">
+            </a>
+        </div>
+
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="fresh-container">
+        <section class="fresh-h1">
+            <div class="fresh-h1-bg-color"></div>
+            <h1>Make Your Own Drink!</h1>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First name* <input id="fname" type="text" name="fname" required></label>
+                <label>Last name* <input id="lname" type="text" name="lname" required></label>
+                <label>Phone number* <input id="phone" type="tel" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                <label>Email <input id="email" type="email" name="email" placeholder="someone@email.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose Three Kind of Fruits!</legend>
+                <label>Fruit One 
+                    <select id="fruit1" name="fruit1">
+                    </select>
+                </label>
+
+                <label>Fruit Two 
+                    <select id="fruit2" name="fruit2">
+                    </select>
+                </label>
+
+                <label>Fruit Three
+                    <select id="fruit3" name="fruit3">
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <label id="special-instruction"><textarea name="special-instruction"></textarea></label>
+            </fieldset>
+
+            <input id="submitBtn" type="submit" value="Submit Your Order">
+
+            <div id="output"></div>
+        </form>
+
+    </main>
+
+    <footer id="large-view">
+        <div class="social">
+            <a href="https://www.facebook.com/">
+                <img src="images/home/social-media/placeholder.jpg" data-src="images/home/social-media/facebook.jpg" alt="Logo of Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/">
+                <img src="images/home/social-media/placeholder.jpg" data-src="images/home/social-media/instagram.jpg" alt="Logo of Instagram">
+            </a>
+
+            <a href="https://twitter.com/">
+                <img src="images/home/social-media/placeholder.jpg" data-src="images/home/social-media/twitter.jpg" alt="Logo of Twitter">
+            </a>
+
+            <a href="https://www.youtube.com/">
+                <img src="images/home/social-media/placeholder.jpg" data-src="images/home/social-media/youtube.jpg" alt="Logo of Youtube">
+            </a>
+        </div>
+
+        <div class="footer-logo">
+            <img src="images/home/logo/placeholder.jpg" data-src="images/home/logo/bountiful-foods.jpg" alt="Logo of Bountiful Foods">
+        </div>
+
+        <div class="siteplan">
+            <h2><a href="#">Siteplan</a></h2>
+            <h2>Data API</h2>
+            <p>Weather is based on <a href="https://openweathermap.org/api">OpenWeatherMap</a></p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact information</h2>
+            <p>Phone number: +1(000)-000-0000 <br>
+            Email Address: bountiful-foods@fakegmail.com <br>
+            Address: 123 Fake St. Carlsbad, CA. 92009</p>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> Bountiful Foods | Terrystan N. Sustal | WDD 230 Final Project | Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/fruits.js"></script>
+    <script src="scripts/lastUpdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
