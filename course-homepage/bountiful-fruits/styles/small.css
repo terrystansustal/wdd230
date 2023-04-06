@@ -1039,8 +1039,8 @@ font-family: 'Roboto', sans-serif; */
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        width: 100px;
-        height: 40px;
+        width: 200px;
+        height: 50px;
         background-color: #D4A373;
         border: 2px solid #FEFAE0;
         position: absolute;
@@ -1814,7 +1814,7 @@ font-family: 'Roboto', sans-serif; */
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
-        width: 100px;
+        width: 200px;
         height: 40px;
         background-color: #D4A373;
         border: 2px solid #FEFAE0;
