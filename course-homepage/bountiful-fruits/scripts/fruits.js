@@ -96,11 +96,4 @@ button.addEventListener('click', (event) => {
         const numOrderSpan = document.querySelector('#num-Of-Order');
         numOrderSpan.textContent = numSubmission++;
     }
-    
-
-    localStorage.setItem('submission', numSubmission);
-    // let numsubmissions = Number(localStorage.getItem("submission"));
-    // numsubmissions++;
-    // localStorage.setItem("submission", numsubmissions);
-    // numOrderSpan.innerHTML = numsubmissions;
 });
